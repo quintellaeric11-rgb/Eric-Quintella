@@ -43,7 +43,7 @@ try{
   const path=`${fa.id}/${ya.id}/${assignment.id}/evidence.txt`;
   ok(await youthA.storage.from('evidence').upload(path,new Blob(['evidência QA'],{type:'application/pdf'}),{contentType:'application/pdf'}),'upload privado');
   ok(await youthA.from('mission_evidence').insert({assignment_id:assignment.id,family_id:fa.id,youth_id:ya.id,evidence_type:'TEXT',text_content:'Realizei a missão.',file_path:path,reflection_difficult:'Organizar os passos',reflection_different:'Começaria antes'}),'evidência');
-  ok(await youthA.from('mission_assignments').update({status:'SUBMITTED',submitted_at:new Date().toISOString()}).eq('id',assignment.id),'envio');
+  ok(await youthA.rpc('submit_mission',{target_assignment:assignment.id}),'envio');
   const deniedQuery=ok(await parentB.from('mission_evidence').select('id').eq('assignment_id',assignment.id),'isolamento evidência');
   assert.equal(deniedQuery.length,0,'Família B leu evidência da família A');
   const deniedFile=await parentB.storage.from('evidence').download(path);

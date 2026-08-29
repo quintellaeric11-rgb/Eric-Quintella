@@ -12,6 +12,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:migrate": "node scripts/apply-migrations.mjs",
     "test:integration": "node scripts/test-supabase.mjs",
+    "test:journey": "node scripts/test-journey.mjs",
     "admin:promote": "node scripts/promote-admin.mjs"
   },
   "dependencies": {
