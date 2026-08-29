@@ -1,0 +1,4 @@
+import { createClient } from '@supabase/supabase-js';
+export function createAdminSupabase(){const url=process.env.NEXT_PUBLIC_SUPABASE_URL;const key=process.env.SUPABASE_SERVICE_ROLE_KEY;if(!url||!key)throw new Error('Supabase server environment missing');return createClient(url,key,{auth:{persistSession:false,autoRefreshToken:false}})}
+export async function requireApiUser(request:Request){const token=request.headers.get('authorization')?.replace(/^Bearer\s+/i,'');if(!token)throw new Error('UNAUTHORIZED');const admin=createAdminSupabase();const{data,error}=await admin.auth.getUser(token);if(error||!data.user)throw new Error('UNAUTHORIZED');return{admin,user:data.user,token}}
+export function makeInviteCode(){const alphabet='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';let out='';for(let i=0;i<6;i++)out+=alphabet[Math.floor(Math.random()*alphabet.length)];return out}
