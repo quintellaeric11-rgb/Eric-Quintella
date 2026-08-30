@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import{getBirthdayState,ageBand,onboardingIsComplete}from'../lib/product-utils.ts';
+import{appRouteUrl,notificationRoute,parseAppRoute}from'../lib/app-navigation.ts';
+
+assert.deepEqual(getBirthdayState('2012-08-29',new Date(2026,7,29)),{age:14,ageTurning:15,daysUntil:0,monthsUntil:0,remainingDays:0,isBirthday:true,nextBirthday:new Date(2026,7,29),tier:'TODAY'});
+assert.equal(getBirthdayState('2012-12-10',new Date(2026,7,29)).age,13);
+assert.equal(getBirthdayState('2012-08-28',new Date(2026,7,29)).daysUntil,364);
+assert.equal(getBirthdayState('2012-09-15',new Date(2026,7,29)).tier,'HIGHLIGHT');
+assert.equal(getBirthdayState('2012-11-15',new Date(2026,7,29)).tier,'RELEVANT');
+assert.equal(getBirthdayState('2012-12-15',new Date(2026,7,29)).tier,'SECONDARY');
+assert.equal(getBirthdayState('2012-04-15',new Date(2026,7,29)).tier,'DISCREET');
+assert.equal(ageBand(12),'JUNIOR');
+assert.equal(ageBand(14),'EXPLORER');
+assert.equal(ageBand(17),'INDEPENDENT');
+assert.equal(onboardingIsComplete('PARENT',{onboarding_completed_at:'2026-08-29'}),true);
+assert.equal(onboardingIsComplete('PARENT',{onboarding_completed_at:null}),false);
+assert.equal(onboardingIsComplete('YOUTH',{onboarding_completed_at:'2026-08-29',birth_date:'2012-08-29'}),true);
+assert.equal(onboardingIsComplete('YOUTH',{onboarding_completed_at:'2026-08-29',birth_date:null}),false);
+assert.equal(onboardingIsComplete('ADMIN',null),true);
+const assignment='11111111-1111-4111-8111-111111111111',contract='22222222-2222-4222-8222-222222222222';
+assert.deepEqual(parseAppRoute(`/?view=mission&assignment=${assignment}`),{view:'mission',assignmentId:assignment,contractId:undefined});
+assert.deepEqual(parseAppRoute('/?view=review&assignment=invalid'),{view:'review',assignmentId:undefined,contractId:undefined});
+assert.deepEqual(parseAppRoute('/?view=unknown'),{view:'home',assignmentId:undefined,contractId:undefined});
+assert.equal(appRouteUrl({view:'contract',contractId:contract}),`/?view=contract&contract=${contract}`);
+assert.deepEqual(notificationRoute({type:'MISSION_SUBMITTED',deep_link:'/?view=review',related_entity_id:assignment}),{view:'review',assignmentId:assignment,contractId:undefined});
+assert.deepEqual(notificationRoute({type:'JOURNEY_REVIEW',deep_link:'/?view=journey-review'}),{view:'journey-review',assignmentId:undefined,contractId:undefined});
+console.log('Product utils: DOB, idade, aniversário, onboarding e navegação persistente validados.');

@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import {createClient} from '@supabase/supabase-js';
 import {loadLocalEnv} from './env.mjs';
-
 loadLocalEnv();
 const url=process.env.NEXT_PUBLIC_SUPABASE_URL,anon=process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,service=process.env.SUPABASE_SERVICE_ROLE_KEY;
 assert(url&&anon&&service,'Variáveis Supabase ausentes');
@@ -9,35 +8,45 @@ const admin=createClient(url,service,{auth:{persistSession:false,autoRefreshToke
 const ok=(r,label)=>{if(r.error)throw new Error(`${label}: ${r.error.message}`);return r.data};
 async function make(role,name,email,username){const u=ok(await admin.auth.admin.createUser({email,password,email_confirm:true,user_metadata:{role,first_name:name,username}}),`criar ${name}`).user;users.push(u.id);return u}
 async function login(email){const c=createClient(url,anon,{auth:{persistSession:false,autoRefreshToken:false}});const s=ok(await c.auth.signInWithPassword({email,password}),'login');return{c,token:s.session.access_token}}
-
+const sum=rows=>Number(rows.reduce((n,m)=>n+Number(m.progress_percentage),0).toFixed(4));
 try{
-  const carlosMail=`carlos-${stamp}@konki.test`,ericMail=`eric-${stamp}@konki.test`,otherMail=`other-${stamp}@konki.test`;
-  const carlos=await make('PARENT','Carlos',carlosMail),eric=await make('YOUTH','Eric',ericMail,`eric.${stamp}`),other=await make('PARENT','Outra',otherMail);
-  const family=ok(await admin.from('families').insert({name:'Família Carlos',invite_code:`C${stamp}`.slice(0,12).toUpperCase(),created_by:carlos.id}).select().single(),'família Carlos');families.push(family.id);
-  const familyB=ok(await admin.from('families').insert({name:'Família B',invite_code:`B${stamp}`.slice(0,12).toUpperCase(),created_by:other.id}).select().single(),'família B');families.push(familyB.id);
-  ok(await admin.from('family_members').insert([{family_id:family.id,profile_id:carlos.id,role:'PARENT'},{family_id:family.id,profile_id:eric.id,role:'YOUTH'},{family_id:familyB.id,profile_id:other.id,role:'PARENT'}]),'membros');
-  ok(await admin.from('parent_profiles').insert([{profile_id:carlos.id,development_goals:['Educação financeira','Responsabilidade','Comunicação','Mais confiança']},{profile_id:other.id,development_goals:[]}]),'perfil Carlos');
-  ok(await admin.from('youth_profiles').insert({profile_id:eric.id,age:15,interests:['Viagens','Comida','História','Fórmula 1']}),'perfil Eric');
-  const parent=await login(carlosMail),youth=await login(ericMail),outsider=await login(otherMail);
-  const target=new Date();target.setMonth(target.getMonth()+8);
-  const conquest=ok(await youth.c.from('conquests').insert({family_id:family.id,youth_id:eric.id,title:'Viagem para Itália',category:'VIAGEM',approximate_value:12000,desired_date:target.toISOString().slice(0,10),reason:'Conhecer história, comida e cultura.',status:'PENDING'}).select().single(),'criar conquista');
+  const parentMail=`parent-${stamp}@konki.test`,youthMail=`youth-${stamp}@konki.test`,otherMail=`other-${stamp}@konki.test`;
+  const parentUser=await make('PARENT','Carlos',parentMail),youthUser=await make('YOUTH','Eric',youthMail,`eric.${stamp}`),otherUser=await make('PARENT','Outra',otherMail);
+  const family=ok(await admin.from('families').insert({name:'Família Carlos',invite_code:`C${stamp}`.slice(0,12).toUpperCase(),created_by:parentUser.id}).select().single(),'família A');families.push(family.id);
+  const familyB=ok(await admin.from('families').insert({name:'Família B',invite_code:`B${stamp}`.slice(0,12).toUpperCase(),created_by:otherUser.id}).select().single(),'família B');families.push(familyB.id);
+  ok(await admin.from('family_members').insert([{family_id:family.id,profile_id:parentUser.id,role:'PARENT'},{family_id:family.id,profile_id:youthUser.id,role:'YOUTH'},{family_id:familyB.id,profile_id:otherUser.id,role:'PARENT'}]),'membros');
+  ok(await admin.from('parent_profiles').insert([{profile_id:parentUser.id,development_goals:['Educação financeira','Autonomia','Comunicação','Organização']},{profile_id:otherUser.id,development_goals:[]}]),'perfis responsáveis');
+  ok(await admin.from('youth_profiles').insert({profile_id:youthUser.id,age:15,birth_date:'2011-03-10',interests:['Viagens','Comida','História']}),'perfil jovem');
+  const parent=await login(parentMail),youth=await login(youthMail),outsider=await login(otherMail);
+  const conquestId=ok(await youth.c.rpc('create_conquest',{conquest_title:'Quero viajar para a Itália',conquest_category:'OTHER',conquest_reason:'Conhecer história, comida e cultura.'}),'criar conquista');
+  const conquest=ok(await youth.c.from('conquests').select('*').eq('id',conquestId).single(),'ler conquista');
   const response=await fetch('http://localhost:3000/api/missions/recommend',{method:'POST',headers:{'content-type':'application/json',authorization:`Bearer ${youth.token}`},body:JSON.stringify({conquestId:conquest.id})});
-  const generated=await response.json();assert(response.ok,generated.error);assert.equal(generated.missionCount,20);assert.equal(generated.durationMonths,8);
-  const journey=ok(await parent.c.from('journeys').select('*').eq('conquest_id',conquest.id).single(),'pai vê proposta');
-  let missions=ok(await parent.c.from('journey_missions').select('*').eq('journey_id',journey.id).order('mission_order'),'pai vê missões');assert.equal(missions.length,20);
-  assert((await youth.c.from('journeys').select('id').eq('id',journey.id)).data.length===0,'jovem viu rascunho');
-  assert((await outsider.c.from('journeys').select('id').eq('id',journey.id)).data.length===0,'outra família viu jornada');
-  const first=missions[0];ok(await parent.c.from('journey_missions').update({title:'Monte o orçamento completo da viagem',is_custom:true}).eq('id',first.id),'editar');
-  ok(await parent.c.from('journey_missions').delete().eq('id',missions[1].id),'remover');
-  const catalogOptions=ok(await parent.c.from('missions').select('*').is('family_id',null).limit(50),'catálogo');const catalog=catalogOptions.find(m=>!missions.some(x=>x.source_mission_id===m.id));assert(catalog,'catálogo sem opção nova');
-  ok(await parent.c.from('journey_missions').insert({journey_id:journey.id,family_id:family.id,source_mission_id:catalog.id,title:catalog.title,description:catalog.description,instructions:catalog.description,category:catalog.category,skills:catalog.skills,estimated_minutes:catalog.estimated_minutes,xp_reward:catalog.xp_reward,goal_progress_reward:5,evidence_types:catalog.evidence_types,phase:4,mission_order:21,recommendation_reasons:['Escolhida pelo responsável']}),'adicionar catálogo');
-  const custom=ok(await parent.c.from('journey_missions').insert({journey_id:journey.id,family_id:family.id,title:'Planejar um almoço italiano da família',description:'Escolha o prato, estime o custo e organize o horário.',instructions:'Monte um plano completo para o almoço.',category:'Vida real',skills:['Responsabilidade','Organização'],estimated_minutes:30,xp_reward:150,goal_progress_reward:5,evidence_types:['TEXT','IMAGE'],phase:4,mission_order:22,recommendation_reasons:['Criada pelo responsável'],is_custom:true}).select().single(),'missão própria');
-  ok(await parent.c.from('journey_missions').update({mission_order:1001}).eq('id',first.id),'reordenar temp');
-  ok(await parent.c.from('journey_missions').update({mission_order:1}).eq('id',custom.id),'reordenar custom');
-  ok(await parent.c.from('journey_missions').update({mission_order:22}).eq('id',first.id),'reordenar primeira');
-  const approved=ok(await parent.c.rpc('approve_journey',{target_journey:journey.id}),'aprovar jornada');assert.equal(approved.status,'ACTIVE');assert.equal(approved.mission_count,21);
-  const active=ok(await youth.c.from('mission_assignments').select('*,mission:missions(*)').eq('conquest_id',conquest.id),'jovem vê missões');assert.equal(active.length,21);assert(active.every(x=>x.status==='AVAILABLE'));
+  const generated=await response.json();assert(response.ok,generated.error);
+  const journey=ok(await parent.c.from('journeys').select('*').eq('conquest_id',conquest.id).single(),'responsável vê proposta');
+  let missions=ok(await parent.c.from('journey_missions').select('*').eq('journey_id',journey.id).order('mission_order'),'responsável vê missões');
+  assert.equal(missions.length,generated.missionCount);assert.equal(sum(missions),100);assert(missions.every(m=>m.why_this_mission&&m.contextualized_evidence_request));
+  assert.equal((await youth.c.from('journeys').select('id').eq('id',journey.id)).data.length,0,'jovem viu rascunho');
+  assert.equal((await outsider.c.from('journeys').select('id').eq('id',journey.id)).data.length,0,'outra família viu jornada');
+  assert.equal((await outsider.c.from('journey_missions').select('id').eq('journey_id',journey.id)).data.length,0,'outra família viu missões');
+  ok(await parent.c.from('journey_missions').update({effort_weight:5,title:'Monte o orçamento completo da viagem',is_custom:true}).eq('id',missions[0].id),'editar peso');
+  missions=ok(await parent.c.from('journey_missions').select('*').eq('journey_id',journey.id).order('mission_order'),'recalcular edição');assert.equal(sum(missions),100);assert.equal(missions[0].effort_weight,5);
+  ok(await parent.c.from('journey_missions').delete().eq('id',missions[1].id),'remover missão');
+  missions=ok(await parent.c.from('journey_missions').select('*').eq('journey_id',journey.id).order('mission_order'),'recalcular remoção');assert.equal(sum(missions),100);
+  const custom=ok(await parent.c.from('journey_missions').insert({journey_id:journey.id,family_id:family.id,title:'Planejar um almoço italiano da família',description:'Organize uma experiência pequena e real.',instructions:'Escolha o prato, estime o custo e monte o plano.',category:'DEVELOPMENT_CONTEXTUALIZED',skills:['organization','financial_literacy'],estimated_minutes:30,xp_reward:150,goal_progress_reward:0,evidence_types:['TEXT','IMAGE'],phase:3,mission_order:99,recommendation_reasons:['Criada pelo responsável'],why_this_mission:'Transforma pesquisa e orçamento em uma experiência concreta ligada à viagem.',effort_weight:3,is_custom:true}).select().single(),'adicionar missão');
+  missions=ok(await parent.c.from('journey_missions').select('*').eq('journey_id',journey.id).order('mission_order'),'recalcular adição');assert.equal(sum(missions),100);assert(missions.some(m=>m.id===custom.id));
+  const approved=ok(await parent.c.rpc('approve_journey_with_agreement',{target_journey:journey.id,goal_value:12000,reward_text:'Cumprir o combinado da viagem.',duration_months:4}),'aprovar jornada');assert.equal(approved.status,'APPROVED');
+  const contract=ok(await parent.c.from('conquest_contracts').select('*').eq('conquest_id',conquest.id).single(),'compromisso pendente');assert.equal(contract.status,'PENDING');
+  const active=ok(await youth.c.from('mission_assignments').select('*,mission:missions(*)').eq('conquest_id',conquest.id).order('mission_order'),'jovem vê missões');assert.equal(active.length,missions.length);assert.equal(active[0].status,'AVAILABLE');assert(active.slice(1).every(a=>a.status==='LOCKED'),'somente a primeira missão deve estar disponível');assert.deepEqual(active.map(a=>a.mission_order),missions.map(m=>m.mission_order));
+  const blocked=await youth.c.rpc('start_mission',{target_assignment:active[0].id});assert(blocked.error,'missão iniciou antes dos dois aceites');
+  assert.equal(ok(await parent.c.rpc('accept_commitment',{target_contract:contract.id}),'aceite responsável'),'PENDING');
+  let accepts=ok(await parent.c.from('contract_acceptances').select('*').eq('contract_id',contract.id),'aceites separados');assert.equal(accepts.length,1);assert.equal(accepts[0].role,'PARENT');
+  assert.equal(ok(await youth.c.rpc('accept_commitment',{target_contract:contract.id}),'aceite jovem'),'ACTIVE');
+  accepts=ok(await youth.c.from('contract_acceptances').select('*').eq('contract_id',contract.id),'dois aceites');assert.deepEqual(new Set(accepts.map(a=>a.role)),new Set(['PARENT','YOUTH']));
   ok(await youth.c.rpc('start_mission',{target_assignment:active[0].id}),'jovem inicia');
-  await youth.c.from('journey_missions').update({xp_reward:999}).eq('id',custom.id);const protectedMission=ok(await parent.c.from('journey_missions').select('xp_reward').eq('id',custom.id).single(),'verificar proteção');assert.equal(protectedMission.xp_reward,150,'jovem editou regra da jornada');
-  console.log('PASS: Carlos/Eric, 8 meses/20 sugeridas, customização completa, aprovação, 21 missões visíveis e RLS entre famílias.');
+  ok(await youth.c.from('mission_evidence').insert({assignment_id:active[0].id,family_id:family.id,youth_id:youthUser.id,evidence_type:'TEXT',text_content:'Comparei opções reais e registrei minha decisão.',reflection_difficult:'Encontrar valores comparáveis.',reflection_different:'Começaria pelos critérios.'}),'evidência');
+  ok(await youth.c.rpc('submit_mission',{target_assignment:active[0].id}),'enviar missão');
+  const review=ok(await parent.c.rpc('approve_mission',{target_assignment:active[0].id,review_note:'Evidência clara.'}),'aprovar evidência');assert(review.xp_reward>0);
+  const sequenceAfterApproval=ok(await youth.c.from('mission_assignments').select('id,status,mission_order').eq('conquest_id',conquest.id).order('mission_order'),'próxima missão');assert.equal(sequenceAfterApproval[0].status,'APPROVED');assert.equal(sequenceAfterApproval[1].status,'AVAILABLE');assert(sequenceAfterApproval.slice(2).every(a=>a.status==='LOCKED'));
+  const updated=ok(await youth.c.from('conquests').select('status,progress').eq('id',conquest.id).single(),'progresso final');assert.equal(updated.status,'ACTIVE');assert(Number(updated.progress)>0&&Number(updated.progress)<100);
+  console.log(`PASS: ${missions.length} missões, progresso ponderado 100%, edição/remoção/adição recalculadas, aceite Parent e Youth separado, bloqueio até o segundo aceite, evidência aprovada e RLS entre duas famílias.`);
 }finally{for(const f of families)await admin.from('families').delete().eq('id',f);for(const u of users)await admin.auth.admin.deleteUser(u)}

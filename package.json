@@ -13,6 +13,14 @@
     "db:migrate": "node scripts/apply-migrations.mjs",
     "test:integration": "node scripts/test-supabase.mjs",
     "test:journey": "node scripts/test-journey.mjs",
+    "test:mission-engine": "node scripts/test-mission-engine.mjs",
+    "test:product": "node --experimental-strip-types scripts/test-product-utils.mjs",
+    "test:product-flow": "node scripts/test-product-flow.mjs",
+    "test:wave1-security": "node scripts/test-wave1-security.mjs",
+    "test:wave2": "node scripts/test-wave2.mjs",
+    "test:flow": "node scripts/test-flow.mjs",
+    "test:second-update": "node scripts/test-second-update.mjs",
+    "test:invite-links": "node scripts/test-invite-links.mjs",
     "admin:promote": "node scripts/promote-admin.mjs"
   },
   "dependencies": {

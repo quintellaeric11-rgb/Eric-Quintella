@@ -1,0 +1,3 @@
+'use client';
+import{useEffect,useState}from'react';import{createBrowserSupabase}from'@/lib/supabase/client';import{KonkiLogo}from'../../brand';
+export default function OAuthCallback(){const[msg,setMsg]=useState('Conectando sua conta…');useEffect(()=>{const run=async()=>{const code=new URLSearchParams(location.search).get('code');if(code){const{error}=await createBrowserSupabase().auth.exchangeCodeForSession(code);if(error){setMsg('Não foi possível concluir o acesso. Volte e tente novamente.');return}}location.replace('/')};run()},[]);return <main className="splash"><KonkiLogo/><span>{msg}</span></main>}

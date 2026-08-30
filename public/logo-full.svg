@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" role="img" aria-label="KONKI, Aprenda a conquistar">
+  <defs><linearGradient id="g" x1="50" y1="5" x2="50" y2="95" gradientUnits="userSpaceOnUse"><stop stop-color="#D8F42B"/><stop offset=".52" stop-color="#8BCF35"/><stop offset="1" stop-color="#1E7A4D"/></linearGradient></defs>
+  <path d="M46 7 31 39 8 45l24 15-9 34 27-25 29 25-17-36 30-38-40 17z" fill="url(#g)"/>
+  <text x="112" y="55" fill="currentColor" font-family="Arial,sans-serif" font-size="42" font-weight="700" letter-spacing="8">KONKI</text>
+  <text x="114" y="79" fill="currentColor" font-family="Arial,sans-serif" font-size="13" letter-spacing=".5">Aprenda a conquistar.</text>
+</svg>
