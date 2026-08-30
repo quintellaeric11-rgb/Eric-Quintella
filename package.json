@@ -21,6 +21,7 @@
     "test:flow": "node scripts/test-flow.mjs",
     "test:second-update": "node scripts/test-second-update.mjs",
     "test:invite-links": "node scripts/test-invite-links.mjs",
+    "test:core-regressions": "node scripts/test-core-regressions.mjs",
     "admin:promote": "node scripts/promote-admin.mjs"
   },
   "dependencies": {
