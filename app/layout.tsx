@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import PWARegister from './pwa-register';
@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = { title: 'KONKI | Aprenda a conquistar', description: 'Transforme objetivos em esforço, progresso e conquistas reais.', manifest:'/manifest.webmanifest?v=4', themeColor:'#032C27', appleWebApp:{capable:true,statusBarStyle:'black-translucent',title:'KONKI'}, icons:{icon:[{url:'/favicon.svg?v=4',type:'image/svg+xml'},{url:'/icon-v3-192.png?v=4',sizes:'192x192',type:'image/png'}],apple:[{url:'/apple-touch-icon-v3.png?v=4',sizes:'180x180',type:'image/png'}]}, openGraph:{title:'KONKI | Aprenda a conquistar',description:'Transforme objetivos em esforço, progresso e conquistas reais.',type:'website',images:['https://konki.quintellaeric11.chatgpt.site/og.png']}, twitter:{card:'summary_large_image',title:'KONKI | Aprenda a conquistar',description:'Transforme objetivos em esforço, progresso e conquistas reais.',images:['https://konki.quintellaeric11.chatgpt.site/og.png']} };
+const publicAppUrl=process.env.NEXT_PUBLIC_APP_URL||'http://localhost:3000';
+
+export const viewport: Viewport={themeColor:'#032C27'};
+export const metadata: Metadata = { metadataBase:new URL(publicAppUrl),title: 'KONKI | Aprenda a conquistar', description: 'Transforme objetivos em esforço, progresso e conquistas reais.', manifest:'/manifest.webmanifest?v=4', appleWebApp:{capable:true,statusBarStyle:'black-translucent',title:'KONKI'}, icons:{icon:[{url:'/favicon.svg?v=4',type:'image/svg+xml'},{url:'/icon-v3-192.png?v=4',sizes:'192x192',type:'image/png'}],apple:[{url:'/apple-touch-icon-v3.png?v=4',sizes:'180x180',type:'image/png'}]}, openGraph:{title:'KONKI | Aprenda a conquistar',description:'Transforme objetivos em esforço, progresso e conquistas reais.',type:'website',images:['/og.png']}, twitter:{card:'summary_large_image',title:'KONKI | Aprenda a conquistar',description:'Transforme objetivos em esforço, progresso e conquistas reais.',images:['/og.png']} };
 
 export default function RootLayout({
   children,

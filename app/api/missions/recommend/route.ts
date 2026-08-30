@@ -1,12 +1,11 @@
 import {NextResponse} from 'next/server';
 import {requireApiUser} from '@/lib/supabase/server';
 import {getBirthdayState} from '@/lib/product-utils';
-// @ts-expect-error JavaScript module shared with integration tests.
 import {buildJourney,classifyGoal,complexityFor} from '@/lib/mission-engine.mjs';
 
 export async function POST(request:Request){
   try{
-    const{admin,user}=await requireApiUser(request),body=await request.json().catch(()=>({}));
+    const{admin,user}=await requireApiUser(request),body=await request.json().catch(()=>({})) as {conquestId?:string};
     const conquest=await admin.from('conquests').select('*').eq('id',String(body.conquestId||'')).single();if(conquest.error)throw conquest.error;
     const member=await admin.from('family_members').select('role').eq('family_id',conquest.data.family_id).eq('profile_id',user.id).single();if(member.error||!(user.id===conquest.data.youth_id||member.data.role==='PARENT'))throw new Error('UNAUTHORIZED');
     const existing=await admin.from('journeys').select('id').eq('conquest_id',conquest.data.id).maybeSingle();if(existing.data)return NextResponse.json({ok:true,journeyId:existing.data.id,existing:true});
