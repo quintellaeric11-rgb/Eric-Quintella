@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import{getBirthdayState,ageBand,onboardingIsComplete}from'../lib/product-utils.ts';
+import{getBirthdayState,ageBand,onboardingIsComplete,formatBrazilianDateInput,parseBrazilianBirthDate,friendlyError}from'../lib/product-utils.ts';
 import{appRouteUrl,notificationRoute,parseAppRoute}from'../lib/app-navigation.ts';
 
 assert.deepEqual(getBirthdayState('2012-08-29',new Date(2026,7,29)),{age:14,ageTurning:15,daysUntil:0,monthsUntil:0,remainingDays:0,isBirthday:true,nextBirthday:new Date(2026,7,29),tier:'TODAY'});
@@ -17,6 +17,11 @@ assert.equal(onboardingIsComplete('PARENT',{onboarding_completed_at:null}),false
 assert.equal(onboardingIsComplete('YOUTH',{onboarding_completed_at:'2026-08-29',birth_date:'2012-08-29'}),true);
 assert.equal(onboardingIsComplete('YOUTH',{onboarding_completed_at:'2026-08-29',birth_date:null}),false);
 assert.equal(onboardingIsComplete('ADMIN',null),true);
+assert.equal(formatBrazilianDateInput('11012007'),'11 / 01 / 2007');
+assert.equal(parseBrazilianBirthDate('11 / 01 / 2007',new Date(2026,7,30)),'2007-01-11');
+assert.equal(parseBrazilianBirthDate('31 / 02 / 2012',new Date(2026,7,30)),null);
+assert.equal(parseBrazilianBirthDate('01 / 01 / 2030',new Date(2026,7,30)),null);
+assert.equal(friendlyError({message:'active_conquest_exists'}),'Você já está correndo atrás de uma conquista.');
 const assignment='11111111-1111-4111-8111-111111111111',contract='22222222-2222-4222-8222-222222222222';
 assert.deepEqual(parseAppRoute(`/?view=mission&assignment=${assignment}`),{view:'mission',assignmentId:assignment,contractId:undefined});
 assert.deepEqual(parseAppRoute('/?view=review&assignment=invalid'),{view:'review',assignmentId:undefined,contractId:undefined});

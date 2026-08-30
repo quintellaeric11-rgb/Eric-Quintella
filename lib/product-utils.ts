@@ -31,6 +31,30 @@ export function ageGuidance(age:number){
 
 export function moneyBRL(value:number){return new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(value)}
 
+export function formatBrazilianDateInput(value:string){
+  const digits=value.replace(/\D/g,'').slice(0,8);
+  return[digits.slice(0,2),digits.slice(2,4),digits.slice(4,8)].filter(Boolean).join(' / ');
+}
+
+export function parseBrazilianBirthDate(value:string,now=new Date()){
+  const match=value.match(/^(\d{2})\s*\/\s*(\d{2})\s*\/\s*(\d{4})$/);
+  if(!match)return null;
+  const day=Number(match[1]),month=Number(match[2]),year=Number(match[3]);
+  const date=new Date(year,month-1,day);
+  if(date.getFullYear()!==year||date.getMonth()!==month-1||date.getDate()!==day)return null;
+  const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  if(date>today||year<1900)return null;
+  return`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+}
+
+export function friendlyError(error:unknown,fallback='Não foi possível concluir agora. Tente novamente.'){
+  const message=typeof error==='string'?error:error&&typeof error==='object'&&'message' in error?String(error.message):'';
+  if(message.includes('active_conquest'))return'Você já está correndo atrás de uma conquista.';
+  if(/network|fetch|connection|timeout/i.test(message))return'Sem conexão no momento. Confira sua internet e tente novamente.';
+  if(/unauthorized|permission|rls|policy|jwt/i.test(message))return'Você não tem permissão para fazer isso.';
+  return fallback;
+}
+
 export function onboardingIsComplete(role:'PARENT'|'YOUTH'|'ADMIN',record:{onboarding_completed_at?:string|null;birth_date?:string|null}|null){
   if(role==='ADMIN')return true;
   if(!record?.onboarding_completed_at)return false;
