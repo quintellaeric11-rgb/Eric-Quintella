@@ -39,6 +39,11 @@ for(const sample of cases){
   reports.push({objetivo:sample.name,tipo:classification.goal_type,complexidade:complexity.band,pontuacao:complexity.score,missoes:missions.length,semanas:complexity.suggested_weeks,distribuicao:distribution,titulos:missions.slice(0,4).map(m=>m.title)});
 }
 assert(new Set(reports.map(r=>r.missoes)).size>=3,'Os cenários devem gerar quantidades diferentes');
+const realProfileClassification=classifyGoal('quero comprar um tenis');
+const realProfileComplexity=complexityFor(realProfileClassification,['Comunicação','Tomada de decisão','Pensamento crítico','Educação financeira'],19);
+const realProfileMissions=buildJourney({classification:realProfileClassification,complexity:realProfileComplexity,archetypes,parentGoals:['Comunicação','Tomada de decisão','Pensamento crítico','Educação financeira'],interests:['Culinária','Tecnologia','Games','Vídeos','Esportes'],age:19});
+assert.equal(realProfileMissions.length,realProfileComplexity.count,'Perfil real de 19 anos deve receber jornada completa');
+assert.equal(Number(realProfileMissions.reduce((sum,m)=>sum+m.progress_percentage,0).toFixed(4)),100,'Perfil real de 19 anos: progresso');
 const ps5Classification=classifyGoal('Quero comprar um PS5'),ps5Skills=['Educação financeira','Tomada de decisão'];
 const ageVersions=[12,14,17].map(age=>{const complexity=complexityFor(ps5Classification,ps5Skills,age),missions=buildJourney({classification:ps5Classification,complexity,archetypes,parentGoals:ps5Skills,interests:['Games','Tecnologia'],age});return{age,missions}});
 for(const version of ageVersions){
