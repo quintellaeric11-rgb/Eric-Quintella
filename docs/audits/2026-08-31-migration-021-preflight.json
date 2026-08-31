@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-08-31T02:36:56.480Z",
+  "database_latest_migration": "202608300020_p0_lifecycle_reconciliation.sql",
+  "migration_021_previously_applied": false,
+  "row_counts": {
+    "family_invites": 9,
+    "family_members": 16,
+    "mission_assignments": 31,
+    "parent_custom_assignments": 1,
+    "parent_custom_still_sequenced": 1
+  },
+  "schema_preconditions": {
+    "family_invites_link_token_uuid_not_null": true,
+    "family_invites_reservation_token_uuid_nullable": true,
+    "family_invites_reservation_expires_at_timestamptz_nullable": true,
+    "mission_assignments_journey_id_uuid_nullable": true,
+    "mission_assignments_mission_order_integer_nullable": true,
+    "missions_lesson_content_jsonb_not_null": true,
+    "family_members_role_text_not_null": true
+  },
+  "rls_before": {
+    "family_invites": {"enabled": true, "policies": 1},
+    "family_members": {"enabled": true, "policies": 1},
+    "mission_assignments": {"enabled": true, "policies": 3},
+    "missions": {"enabled": true, "policies": 2},
+    "parent_profiles": {"enabled": true, "policies": 2},
+    "youth_profiles": {"enabled": true, "policies": 3}
+  },
+  "rollback_diagnostics": "The migration runner wraps the file and migration ledger insert in one transaction. A SQL failure rolls back the full migration. This snapshot records the only legacy Parent-authored assignment expected to be detached from sequence."
+}
