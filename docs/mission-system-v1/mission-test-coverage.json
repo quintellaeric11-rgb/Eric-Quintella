@@ -1,0 +1,1359 @@
+{
+  "generatedAt": "2026-09-01T12:50:24.839Z",
+  "missionCount": 45,
+  "assertions": 314,
+  "failures": [],
+  "coverage": {
+    "M01": {
+      "missionId": "M01",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M02": {
+      "missionId": "M02",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M03": {
+      "missionId": "M03",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M04": {
+      "missionId": "M04",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M05": {
+      "missionId": "M05",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M06": {
+      "missionId": "M06",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        }
+      }
+    },
+    "M07": {
+      "missionId": "M07",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M08": {
+      "missionId": "M08",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M09": {
+      "missionId": "M09",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M10": {
+      "missionId": "M10",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M11": {
+      "missionId": "M11",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M12": {
+      "missionId": "M12",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M13": {
+      "missionId": "M13",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M14": {
+      "missionId": "M14",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M15": {
+      "missionId": "M15",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M16": {
+      "missionId": "M16",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M17": {
+      "missionId": "M17",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M18": {
+      "missionId": "M18",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M19": {
+      "missionId": "M19",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M20": {
+      "missionId": "M20",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M21": {
+      "missionId": "M21",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M22": {
+      "missionId": "M22",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M23": {
+      "missionId": "M23",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M24": {
+      "missionId": "M24",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M25": {
+      "missionId": "M25",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M26": {
+      "missionId": "M26",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M27": {
+      "missionId": "M27",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M28": {
+      "missionId": "M28",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M29": {
+      "missionId": "M29",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M30": {
+      "missionId": "M30",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M31": {
+      "missionId": "M31",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M32": {
+      "missionId": "M32",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M33": {
+      "missionId": "M33",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M34": {
+      "missionId": "M34",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M35": {
+      "missionId": "M35",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M36": {
+      "missionId": "M36",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M37": {
+      "missionId": "M37",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M38": {
+      "missionId": "M38",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M39": {
+      "missionId": "M39",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M40": {
+      "missionId": "M40",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M41": {
+      "missionId": "M41",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M42": {
+      "missionId": "M42",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M43": {
+      "missionId": "M43",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "PASS"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M44": {
+      "missionId": "M44",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    },
+    "M45": {
+      "missionId": "M45",
+      "cases": {
+        "eligible_positive": {
+          "status": "PASS"
+        },
+        "age_below": {
+          "status": "PASS"
+        },
+        "age_above": {
+          "status": "PASS"
+        },
+        "incompatible_goal_type": {
+          "status": "PASS"
+        },
+        "missing_entry_prerequisite": {
+          "status": "PASS"
+        },
+        "missing_in_mission_setup": {
+          "status": "N/A",
+          "reason": "Não aplicável ao contrato canônico"
+        },
+        "safety_or_blocker": {
+          "status": "PASS"
+        },
+        "repetition": {
+          "status": "PASS"
+        }
+      }
+    }
+  }
+}

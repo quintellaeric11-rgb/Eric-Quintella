@@ -1,0 +1,210 @@
+{
+  "generatedAt": "2026-09-01T01:35:04.527Z",
+  "classification": [
+    "NONE",
+    "ADAPTER_ONLY",
+    "PRODUCT_INPUT_REQUIRED",
+    "PERSISTENCE_CHANGE_REQUIRED",
+    "EDITORIAL_DECISION_REQUIRED"
+  ],
+  "fields": [
+    {
+      "field": "youth.youthId",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "profiles/family_members",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "youth.age",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "youth_profiles.date_of_birth",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "youth.interests",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "youth_profiles.interests",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "youth.autonomyLevel",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PRODUCT_INPUT_REQUIRED"
+    },
+    {
+      "field": "goal.goalId",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "conquests.id",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "goal.title",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "conquests.title/raw_goal",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "goal.description",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "conquests.reason",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "goal.primaryGoalType",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": "legacy deterministic classifier",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "goal.metadata.realOptionsCount",
+      "requiredByV1": false,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PRODUCT_INPUT_REQUIRED"
+    },
+    {
+      "field": "family.parentApprovalAvailable",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "family membership/current parent session",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "family.permissions",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PRODUCT_INPUT_REQUIRED"
+    },
+    {
+      "field": "family.approvedPeopleRelations",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PRODUCT_INPUT_REQUIRED"
+    },
+    {
+      "field": "family.moneyRules",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PRODUCT_INPUT_REQUIRED"
+    },
+    {
+      "field": "runtimeState.flags/values",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": "legacy journey/mission state is not V1 registry format",
+      "formatCompatible": false,
+      "migrationNeededEventually": true,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PERSISTENCE_CHANGE_REQUIRED"
+    },
+    {
+      "field": "catalogAvailability",
+      "requiredByV1": true,
+      "existsInCurrentProduct": false,
+      "source": "V1 local versioned catalogs",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "missionHistory",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "journey_missions/mission_assignments/xp_events",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "activeMultiDay",
+      "requiredByV1": true,
+      "existsInCurrentProduct": true,
+      "source": "journey_missions status/timestamps",
+      "formatCompatible": false,
+      "migrationNeededEventually": false,
+      "canDeriveSafely": true,
+      "missing": false,
+      "gap": "ADAPTER_ONLY"
+    },
+    {
+      "field": "manualReviewDecision",
+      "requiredByV1": false,
+      "existsInCurrentProduct": false,
+      "source": null,
+      "formatCompatible": false,
+      "migrationNeededEventually": true,
+      "canDeriveSafely": false,
+      "missing": true,
+      "gap": "PERSISTENCE_CHANGE_REQUIRED"
+    }
+  ]
+}

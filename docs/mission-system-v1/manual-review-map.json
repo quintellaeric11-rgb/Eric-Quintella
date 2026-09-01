@@ -1,0 +1,144 @@
+{
+  "generatedAt": "2026-08-31T23:58:21.211Z",
+  "allowedStages": [
+    "PRE_MATERIALIZATION",
+    "POST_MATERIALIZATION",
+    "PRE_JOURNEY",
+    "POST_JOURNEY",
+    "USER_TEST",
+    "EDITORIAL_QA"
+  ],
+  "total": 26,
+  "rules": [
+    {
+      "rule": 8,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 10,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 14,
+      "stage": "PRE_MATERIALIZATION",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 17,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 20,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 23,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 28,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 36,
+      "stage": "POST_JOURNEY",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 37,
+      "stage": "POST_JOURNEY",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 39,
+      "stage": "PRE_MATERIALIZATION",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 44,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 48,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 49,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 54,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 59,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 66,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 69,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 72,
+      "stage": "POST_JOURNEY",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 74,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 76,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 78,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 80,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 82,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 92,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 101,
+      "stage": "EDITORIAL_QA",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 111,
+      "stage": "POST_JOURNEY",
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    }
+  ]
+}

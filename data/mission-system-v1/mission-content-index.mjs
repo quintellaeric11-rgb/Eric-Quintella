@@ -1,0 +1,2 @@
+import{CANONICAL_MISSION_CONTENT}from'./canonical-content/index.mjs';
+export const MISSION_CONTENT_INDEX=Object.freeze(Object.fromEntries(Object.entries(CANONICAL_MISSION_CONTENT).map(([missionId,c])=>[missionId,{missionId,canonicalTitle:c.youthContent.title,source:c.source.sourceDocument,sourceVersion:c.source.sourceDocumentVersion,contentVersion:c.contentVersion,contentHash:c.source.contentHash,contentStatus:'CANONICAL_CONTENT_LOADED',sections:c.youthContent.sections,ageVariants:c.ageVariants,approvedSlots:c.approvedSlots,completionRuleId:c.completionRuleId}])));

@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-09-01T01:35:04.527Z",
+  "editorialStatusPreserved": true,
+  "summary": {
+    "catalogs": 8,
+    "integrationBlocking": 0,
+    "pilotLimiting": 5,
+    "safeForPilot": 3
+  },
+  "catalogs": [
+    {
+      "id": "CARE_ACTION_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "PILOT_LIMITING",
+      "entryCount": 3,
+      "goalCoverage": [
+        "ELECTRONIC",
+        "INSTRUMENT",
+        "TRAVEL"
+      ],
+      "ageCoverage": {
+        "min": 11,
+        "max": 16
+      },
+      "missionsDependent": [
+        "M41"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 5,
+        "percentage": 50
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "GOAL_PREPARATION_ACTION_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "PILOT_LIMITING",
+      "entryCount": 4,
+      "goalCoverage": [
+        "TRAVEL",
+        "EXPERIENCE",
+        "SKILL",
+        "PROJECT"
+      ],
+      "ageCoverage": {
+        "min": 11,
+        "max": 18
+      },
+      "missionsDependent": [
+        "M43"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 3,
+        "percentage": 30
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "RISK_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "PILOT_LIMITING",
+      "entryCount": 4,
+      "goalCoverage": [
+        "TRAVEL",
+        "EXPERIENCE",
+        "PROJECT",
+        "PHYSICAL_PRODUCT"
+      ],
+      "ageCoverage": {
+        "min": 12,
+        "max": 12
+      },
+      "missionsDependent": [
+        "M44"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 5,
+        "percentage": 50
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "TEST_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "PILOT_LIMITING",
+      "entryCount": 3,
+      "goalCoverage": [
+        "PHYSICAL_PRODUCT",
+        "SKILL",
+        "TRAVEL"
+      ],
+      "ageCoverage": {
+        "min": 11,
+        "max": 18
+      },
+      "missionsDependent": [
+        "M39"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 5,
+        "percentage": 50
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "CONTRIBUTION_METHOD_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "PILOT_LIMITING",
+      "entryCount": 3,
+      "goalCoverage": [
+        "PHYSICAL_PRODUCT",
+        "TRAVEL",
+        "EXPERIENCE",
+        "FINANCIAL_GOAL",
+        "PROJECT"
+      ],
+      "ageCoverage": {
+        "min": 11,
+        "max": 18
+      },
+      "missionsDependent": [
+        "M40"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 7,
+        "percentage": 70
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "APPROVED_SKILLS_CATALOG",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "SAFE_FOR_PILOT",
+      "entryCount": 9,
+      "goalCoverage": [],
+      "ageCoverage": {
+        "min": 11,
+        "max": 11
+      },
+      "missionsDependent": [
+        "M01",
+        "M21"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 0,
+        "percentage": 0
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "APPROVED_EXTERNAL_CHANNELS",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "SAFE_FOR_PILOT",
+      "entryCount": 3,
+      "goalCoverage": [],
+      "ageCoverage": "ENTRY_SPECIFIC_OR_NOT_DECLARED",
+      "missionsDependent": [
+        "M02"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 0,
+        "percentage": 0
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    },
+    {
+      "id": "APPROVED_CONSTRAINTS",
+      "editorialStatus": "MINIMUM_VIABLE_CONTENT",
+      "operationalClassification": "SAFE_FOR_PILOT",
+      "entryCount": 3,
+      "goalCoverage": [],
+      "ageCoverage": {
+        "min": 13,
+        "max": 17
+      },
+      "missionsDependent": [
+        "M18"
+      ],
+      "fixtureImpact": {
+        "fixtures": 10,
+        "affected": 0,
+        "percentage": 0
+      },
+      "fallbackBehavior": "Dependent mission is excluded deterministically; Composer may select another eligible canonical mission. No free-text fallback."
+    }
+  ]
+}

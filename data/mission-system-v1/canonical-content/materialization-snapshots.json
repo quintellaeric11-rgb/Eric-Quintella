@@ -1,0 +1,757 @@
+{
+  "M01": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "0df729d5f2a5cd531a3164e4bd8ede3e67a289814130ac4ff9bf752995f020ac",
+    "payloadHash": "3a7e4f9d61ca947c81b90a08e8b1dcd8acb6d0f6c2939ee7bb9830dd9822ac9b",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M01"
+  },
+  "M02": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "12b7c0873a4beb83a2a2fb46b28400a9a789d2f87075e19b9faa128192971d03",
+    "payloadHash": "28030c49506513709ea076ab9543543c3ee2fa4d34b4859a3ffcd796b0d599ee",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M02"
+  },
+  "M03": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "6c5e40abdcd3eaf33f29dafc65351a422ea2b4a4a9ffdb7f5185a211885247fd",
+    "payloadHash": "017f0e1943b63b6ed82f7e784c068dd5576b94609ee0300b07608f4091272d38",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M03"
+  },
+  "M04": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "59d16c6cf13f5c75a6f9191bf85f372d565cba579896a33954e8b263a21a79c1",
+    "payloadHash": "49e05cc8fa54ec13b578ffeac3f539a90a9e09954fba33c09313d08e0cd25d41",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M04"
+  },
+  "M05": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "6bc251079c169b3896c6d866123f26d38111a1ea57171962c6c95398a1f1d52f",
+    "payloadHash": "3f6fd02932c6c9b66b9391d559ce8fdeecc5496653bc0813c148d8795be1a299",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M05"
+  },
+  "M06": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "33d671cbec55995ecd326480398f1b2a473a78e187ea8d0da68059a06e98e8a2",
+    "payloadHash": "db4ef139e27c0eb1a9e47ad872bf96e4238af67e801e289891bbb4004146195a",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M06"
+  },
+  "M07": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "19f2c32c48bb637e758f5117f0db358d6db8a715689ab8e968c161076aadbdd8",
+    "payloadHash": "91e0b1bcf7356178808683bd9d8c240d9d0a73ffe43fb0b557fc89883eec8a03",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING",
+      "STEPS"
+    ],
+    "completionRuleId": "CR_M07"
+  },
+  "M08": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "7ee28d10bc263e48ca8f347e8c2a2ad9a7c11f34c72bd5574304f484e89691fc",
+    "payloadHash": "9133ba440c08b4f448a359827f21517b35760cf0036c4d263757b586ba60a53d",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M08"
+  },
+  "M09": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "acc1f4ae0957d149a983b0e2f4229635bfb8efd4a0b8163d9570e4022be516ae",
+    "payloadHash": "d9e1b045f7963a1573d5a885a3ddfc08b69454a904efd3b6a0df42df5576467d",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M09"
+  },
+  "M10": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "676c8acccd4aeaacc10c1859736e8ccb585f4036c916205ae71cd659a0efdff9",
+    "payloadHash": "199d8e64dd828580d6063158a003deaf6ab42368cf8421970ecee9861a21bb29",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M10"
+  },
+  "M11": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "f348983c7f0678ff68243c8f3a2aa8f7fc0cf3812880af95ef06374f12eb3ee0",
+    "payloadHash": "47f689e696deadc21337f1956db316720661a4e59f6484f37dd077d23bcbb268",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M11"
+  },
+  "M12": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "47778a046fe7202850acda5edae01d1240ee06a0045cae8591ec31e9f4817804",
+    "payloadHash": "b1938848f851c2567aa61ab8c23429e40e41cb8c8004abacf39db6eb4ff29623",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M12"
+  },
+  "M13": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "c30e3cf826357dd04032c4edec0b202f56dcbff87db8f65641648250aeb083eb",
+    "payloadHash": "604abf0beffd8205fac6aedd709890355583c49da9d1ccccbabfbe57526ec3c6",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M13"
+  },
+  "M14": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "7e14265bd5a99effed48c775d6e2d31482da40ff6621d8900fbaa8bce87081a7",
+    "payloadHash": "0cd553603b902b16a96d5e6c65ee962889a0e2f9cc346e13df81e23ec9200fe3",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M14"
+  },
+  "M15": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "b8a6b24dade98d044507ddfea29a4c4f73d69efa048608b6b6fe78082bddbc95",
+    "payloadHash": "cd965187d11f7f0bd3225e09398703ca4f2081628139a6c95aa697df76cd8631",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING",
+      "STEPS"
+    ],
+    "completionRuleId": "CR_M15"
+  },
+  "M16": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "c1a1e6b9e9def7b8be5988cde20bfff5a604689b34c1eff4c1a87cb5de80e245",
+    "payloadHash": "6d12f4e36b66eb078f5b14fcb32f4a145ff2f1ade25a3e161b91e50215a96b48",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M16"
+  },
+  "M17": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "0afe8115579a766c2b26e3b3d7d9fbb40c39f4ec2e870b64af65a24be3a57942",
+    "payloadHash": "a1189752c35c459c7c1fc9e5277c5f2a235a8f8f55ff39c62fd0e0833da2f71b",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M17"
+  },
+  "M18": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "ff99102c2089fff4b6a59f8e54204db88fc5378c74bac149bc8908adc9be3f8a",
+    "payloadHash": "20ec3b711b9f0112df7de73b593ef340a2f0c6a664645b024f6c481a9077a2ca",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M18"
+  },
+  "M19": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "f6a1cc46f985488c69b37dbdf2debdc4b831718209292c6f458d293c55589cc0",
+    "payloadHash": "e394feca1ae82af58c5416f4a3944192a51cf9b65e4932601613496006a49483",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M19"
+  },
+  "M20": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "473c44cc1bdd7b1a00fc477942b5b798cd07017ccafeebc6cbe58b1577311691",
+    "payloadHash": "392dd0ac35f69cde69233346558440cb95c146d8c00c29d86d98e56677119127",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M20"
+  },
+  "M21": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "61797312ab2280a606fac97d7c4050b31e8b126368857e68de9926248756fd5d",
+    "payloadHash": "b3098737af3d7686a0e7a0079e336e6ba5fa5b6ab1fa1259e71ce62ec9defbb2",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "PROOF",
+      "PROOF",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M21"
+  },
+  "M22": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "342ce385a138db88577e516eb609bbcf5e5d9637caab9d2312e787487e7353fa",
+    "payloadHash": "e662db8727f0d0622f8a00f67da8f3893d51289f8862cd0f291c432c527b55c8",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING",
+      "STEPS"
+    ],
+    "completionRuleId": "CR_M22"
+  },
+  "M23": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "d98fbc57b360ffa39b213a94c1f9fd743eb0a7392615b475540b480f5612e97d",
+    "payloadHash": "c1c4029231742c3c9ac902b892f98d8961e1e137cd98636b60a0e2ae432b06d7",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M23"
+  },
+  "M24": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "e729b278c4ab9dc92bea1fa615c5d9ede86176d5e9cea77d18b88260b99229a8",
+    "payloadHash": "016ddc7105f02048231e4bba2ca74d9a7fbcfedc2a99e7b901621cc562ceff60",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M24"
+  },
+  "M25": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "d3e9937e89b5616ceea2e72fbf6058eec0d1b510cab55bc073eece4085214bed",
+    "payloadHash": "b5e3d95c2888db4300db3d0be7014f798fc2f4a6d9f63050df898402da5edb0c",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M25"
+  },
+  "M26": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "ac7310d47a5e51b36861d6a20bceac83034307eadfaea38afa29e62c5b4fb881",
+    "payloadHash": "e01d6219b99ce582b4a67615f838fda38373854eedbf68e28743bc34d21f7153",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M26"
+  },
+  "M27": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "c981c05047be05c71bc544058c759a937585785dc7c38a21026e71397484f963",
+    "payloadHash": "e3ab6502184cc36efe5f2827532de26c93c2a84cfce3101dce383743c6ffa226",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M27"
+  },
+  "M28": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "75222ffae2e9bf6b4c317184e4c71943f170965356bd74f71114c1c36f22edd9",
+    "payloadHash": "f80de3988e9de70237565f586002271a57994782f832d8c6ee86240df8272f28",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M28"
+  },
+  "M29": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "09880299c3a77135fe8c8756e3244eef13e75d43fdab9d33da546bb0a51ac804",
+    "payloadHash": "089c705a027ca44e5ac790224940149938d4655a28aa5d2179820f09a318d12e",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M29"
+  },
+  "M30": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "c76d93ac339abf1c516405040995732e853a53a8a7cb62f045d93dfacb9d6b62",
+    "payloadHash": "1dc425df2725650235e1b11008be499e0d98406c0f6a3493cb51fdf8ba87c6f5",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M30"
+  },
+  "M31": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "ac80c2e39311cba602127f7a97ce932403b38aca149588329b1abee521b6fdb1",
+    "payloadHash": "354223c8e59e7a1b617937080c372caed1d532da49cd1d890eecbe4db1b11910",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING",
+      "STEPS"
+    ],
+    "completionRuleId": "CR_M31"
+  },
+  "M32": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "13a6229bbcd6a13a15cff4d702041dd789c6cee9705e1019bc1120ebaba46174",
+    "payloadHash": "1a06c06464c815315967d54677b4557eea179722594eb90e1dc1a44242001814",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M32"
+  },
+  "M33": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "169744225a36bd77b4c747f25a3a4fb7f78b4b342d28f4d2edfc104771434090",
+    "payloadHash": "58bb803d32cf4e7c7683c7b6b806f9e9428496390acf3b83bc80dfe7a6211aa8",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M33"
+  },
+  "M34": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "11ba6db4a948f89324790d108e391242216b0ec4c9d7bc39b5428298bf7f0928",
+    "payloadHash": "2c831cab734d77557fb5a3adbdb444650bc404440ee6e71a88dac78fc40fa234",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M34"
+  },
+  "M35": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "7376a810250d07a4c517827f8a564072f84ee64aa1efdc1e5cda19c498a28060",
+    "payloadHash": "01bd3de616fce5d5f94095f090ba58398eac7df31f945aaf67e6ed694deae689",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M35"
+  },
+  "M36": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "f0055d3a0bd6ba9b40e4380d3c7af945c51e72b7fa86bc4a3290f4f1d18b31fd",
+    "payloadHash": "5b33f5101bac4f9f0656ffed637cb32104d7beb5ca87b3dcd1fc34af28069670",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M36"
+  },
+  "M37": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "e5d16a08a9123ff16f1787275ee0f4f0b6fd5572dbab83ecb56b2190f00c2afb",
+    "payloadHash": "5629531ef73737fe83572a7eb85d1f3231358a43400584c7a90ac168e5daeddb",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING",
+      "STEPS"
+    ],
+    "completionRuleId": "CR_M37"
+  },
+  "M38": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "9e532396c817a932f371f6010600776b7a33ace4c41bb782383ee2ceed6d772f",
+    "payloadHash": "c16d3c2e1c483bef6dae9b5d26cfaa295f42311730b0ba6e7c13a882d2333ba0",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M38"
+  },
+  "M39": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "d4500c32a5d38ee6da58f3354d4db2867546c5dd440f2d204069b99787d7929a",
+    "payloadHash": "28360d35f8bf0b6f0c74170741c86281b6d57b936683213d10e904743744be31",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M39"
+  },
+  "M40": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "924eea1b6551a260879ef1216f288e1a01db78fc71928aebf5caa0ac8abb3215",
+    "payloadHash": "1b6de3be11a327eb2a3104dac305da13dc8d9c2c128b7170dcc4c87aa4b0ab75",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M40"
+  },
+  "M41": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "7c855fa5854d18ebc681c9143d096c036d1da33d38c598bf5143791603caf5e0",
+    "payloadHash": "054371ce76c06bf5cc2326ed4de4630c34f88abc58d99f32bc593be8b68c407d",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M41"
+  },
+  "M42": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "4f04ab92c1ad314df375a08066552923cc3804929ecd6c6540790b1fec16bdf4",
+    "payloadHash": "d42e0f4151b2dd4523049c8eac38948781c12adbefaf29341ec436e51e3d9486",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M42"
+  },
+  "M43": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "7858ddd9f7cc959f48362d6d8a9f29f2d0eec623944e77c0727816558791e9c7",
+    "payloadHash": "e4050feb654cff9e2706df0f4b789342a70575122bba58b583a46e0d7a8fc2f1",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M43"
+  },
+  "M44": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "aad8d409da99d7db616ccde90fe3db454d9accc63acdc936874d6060c72eaf59",
+    "payloadHash": "dd339cdd58fb1748df770dd8b2a9f2b96d88d18f27153c5df34408ed7a1a22c4",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M44"
+  },
+  "M45": {
+    "contentVersion": "1.0.0",
+    "canonicalContentHash": "3906c53128fa00f1ed3d7d0830142878fe6dd3be39be142987a5f6c85a7f5705",
+    "payloadHash": "748bd236ec3a39a7ef8e62ea061979d61c31d17137c531024090627e7fa38612",
+    "sectionTypes": [
+      "CHALLENGE",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "STEPS",
+      "PROOF",
+      "POST_LEARNING"
+    ],
+    "completionRuleId": "CR_M45"
+  }
+}

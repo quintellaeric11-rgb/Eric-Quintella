@@ -1,0 +1,517 @@
+{
+  "generatedAt": "2026-08-31T23:47:11.306Z",
+  "previouslyUnresolved": 34,
+  "totals": {
+    "RESOLVED_DETERMINISTIC": 24,
+    "RESOLVED_STRUCTURAL": 5,
+    "MANUAL_REVIEW_REQUIRED": 5,
+    "STILL_UNRESOLVED": 0
+  },
+  "blockers": [
+    {
+      "missionId": "M01",
+      "blockerId": "UNSAFE_VALUE_CREATION_CONTEXT",
+      "originalRule": "UNSAFE_VALUE_CREATION_CONTEXT",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "MANUAL_REVIEW_REQUIRED",
+      "implementation": [
+        "manual review gate"
+      ],
+      "test": [
+        "manual review required"
+      ],
+      "remainingDecision": "A adequação final depende de nuance contextual que deve ser revisada por pessoa autorizada."
+    },
+    {
+      "missionId": "M03",
+      "blockerId": "NO_APPROPRIATE_REAL_PERSON",
+      "originalRule": "NO_APPROPRIATE_REAL_PERSON",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M05",
+      "blockerId": "NO_REAL_OFFER",
+      "originalRule": "NO_REAL_OFFER",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M06",
+      "blockerId": "NO_REAL_ACCEPTANCE_OR_RECIPIENT",
+      "originalRule": "NO_REAL_ACCEPTANCE_OR_RECIPIENT",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M07",
+      "blockerId": "GOAL_TOO_SIMPLE_FOR_LIFE_COST",
+      "originalRule": "GOAL_TOO_SIMPLE_FOR_LIFE_COST",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_STRUCTURAL",
+      "implementation": [
+        "structural contract invariant"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M08",
+      "blockerId": "INAPPROPRIATE_NEGOTIATION_OBJECT",
+      "originalRule": "INAPPROPRIATE_NEGOTIATION_OBJECT",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "MANUAL_REVIEW_REQUIRED",
+      "implementation": [
+        "manual review gate"
+      ],
+      "test": [
+        "manual review required"
+      ],
+      "remainingDecision": "A adequação final depende de nuance contextual que deve ser revisada por pessoa autorizada."
+    },
+    {
+      "missionId": "M10",
+      "blockerId": "AGE_INAPPROPRIATE_NEGOTIATION",
+      "originalRule": "AGE_INAPPROPRIATE_NEGOTIATION",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M12",
+      "blockerId": "NO_REAL_OPTIONS",
+      "originalRule": "NO_REAL_OPTIONS",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M13",
+      "blockerId": "NO_REAL_TRADEOFF",
+      "originalRule": "NO_REAL_TRADEOFF",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M14",
+      "blockerId": "NO_SPECIFIC_AUDIENCE",
+      "originalRule": "NO_SPECIFIC_AUDIENCE",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M15",
+      "blockerId": "NO_REAL_DECISION_CONSTRAINT",
+      "originalRule": "NO_REAL_DECISION_CONSTRAINT",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M17",
+      "blockerId": "NO_REAL_USER_OR_NEED",
+      "originalRule": "NO_REAL_USER_OR_NEED",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M18",
+      "blockerId": "CONSTRAINT_WITHOUT_SKILL_PURPOSE",
+      "originalRule": "CONSTRAINT_WITHOUT_SKILL_PURPOSE",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_STRUCTURAL",
+      "implementation": [
+        "structural contract invariant"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M19",
+      "blockerId": "NO_REAL_VERSION_ONE",
+      "originalRule": "NO_REAL_VERSION_ONE",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M20",
+      "blockerId": "NO_REAL_TESTER",
+      "originalRule": "NO_REAL_TESTER",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "MANUAL_REVIEW_REQUIRED",
+      "implementation": [
+        "manual review gate"
+      ],
+      "test": [
+        "manual review required"
+      ],
+      "remainingDecision": "A adequação final depende de nuance contextual que deve ser revisada por pessoa autorizada."
+    },
+    {
+      "missionId": "M21",
+      "blockerId": "UNREGISTERED_SKILL",
+      "originalRule": "UNREGISTERED_SKILL",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M22",
+      "blockerId": "NO_REAL_WORLD_TEST_CONTEXT",
+      "originalRule": "NO_REAL_WORLD_TEST_CONTEXT",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M23",
+      "blockerId": "NO_REAL_UNDERSTANDING_CHECK",
+      "originalRule": "NO_REAL_UNDERSTANDING_CHECK",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_STRUCTURAL",
+      "implementation": [
+        "structural contract invariant"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M24",
+      "blockerId": "QUESTION_IS_SIMPLE_FACT_LOOKUP",
+      "originalRule": "QUESTION_IS_SIMPLE_FACT_LOOKUP",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "MANUAL_REVIEW_REQUIRED",
+      "implementation": [
+        "manual review gate"
+      ],
+      "test": [
+        "manual review required"
+      ],
+      "remainingDecision": "A adequação final depende de nuance contextual que deve ser revisada por pessoa autorizada."
+    },
+    {
+      "missionId": "M26",
+      "blockerId": "NETWORKING_AS_FAVOR_REQUEST",
+      "originalRule": "NETWORKING_AS_FAVOR_REQUEST",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "MANUAL_REVIEW_REQUIRED",
+      "implementation": [
+        "manual review gate"
+      ],
+      "test": [
+        "manual review required"
+      ],
+      "remainingDecision": "A adequação final depende de nuance contextual que deve ser revisada por pessoa autorizada."
+    },
+    {
+      "missionId": "M28",
+      "blockerId": "INSUFFICIENT_MASTERY",
+      "originalRule": "INSUFFICIENT_MASTERY",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M29",
+      "blockerId": "NO_REAL_BASELINE",
+      "originalRule": "NO_REAL_BASELINE",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M30",
+      "blockerId": "CRITERIA_NOT_LOCKED_BEFORE",
+      "originalRule": "CRITERIA_NOT_LOCKED_BEFORE",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M31",
+      "blockerId": "TESTER_RECEIVES_LIVE_HELP",
+      "originalRule": "TESTER_RECEIVES_LIVE_HELP",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M32",
+      "blockerId": "INFINITE_STREAK",
+      "originalRule": "INFINITE_STREAK",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_STRUCTURAL",
+      "implementation": [
+        "structural contract invariant"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M34",
+      "blockerId": "UNREALISTIC_WEEK",
+      "originalRule": "UNREALISTIC_WEEK",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_STRUCTURAL",
+      "implementation": [
+        "structural contract invariant"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M35",
+      "blockerId": "NO_DAY_SEVEN_APPLICATION",
+      "originalRule": "NO_DAY_SEVEN_APPLICATION",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M36",
+      "blockerId": "NO_APPROVED_BUDGET_PERIOD",
+      "originalRule": "NO_APPROVED_BUDGET_PERIOD",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M38",
+      "blockerId": "NO_REAL_OPTIONS",
+      "originalRule": "NO_REAL_OPTIONS",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M39",
+      "blockerId": "NO_DEFINED_UNCERTAINTY_OR_SAFE_TEST",
+      "originalRule": "NO_DEFINED_UNCERTAINTY_OR_SAFE_TEST",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M40",
+      "blockerId": "NO_APPROVED_CONTRIBUTION_METHOD",
+      "originalRule": "NO_APPROVED_CONTRIBUTION_METHOD",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M41",
+      "blockerId": "NO_APPROVED_CARE_ENTRY_OR_WINDOW",
+      "originalRule": "NO_APPROVED_CARE_ENTRY_OR_WINDOW",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M43",
+      "blockerId": "NO_APPROVED_CONTEXT_ACTION",
+      "originalRule": "NO_APPROVED_CONTEXT_ACTION",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    },
+    {
+      "missionId": "M44",
+      "blockerId": "NO_APPROVED_CATALOG_RISK",
+      "originalRule": "NO_APPROVED_CATALOG_RISK",
+      "previousStatus": "EDITORIAL_RULE_UNRESOLVED",
+      "newStatus": "RESOLVED_DETERMINISTIC",
+      "implementation": [
+        "mission-contract prerequisite/completion/catalog validator"
+      ],
+      "test": [
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs",
+        "scripts/mission-system-v1/test-contract-matrix.mjs"
+      ],
+      "remainingDecision": null
+    }
+  ]
+}

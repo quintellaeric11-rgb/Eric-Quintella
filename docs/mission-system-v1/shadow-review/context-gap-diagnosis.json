@@ -1,0 +1,156 @@
+{
+  "generatedAt": "2026-09-01",
+  "scope": {
+    "cases": 24,
+    "legacyMissionSelected": 24,
+    "v1MissionSelected": 0,
+    "v1Results": {
+      "NEEDS_PARENT_APPROVAL": 18,
+      "CONTEXT_TOO_WEAK": 6
+    },
+    "changesApplied": false
+  },
+  "caseGroups": {
+    "classifiedButNoMission": ["PS5_12", "PS5_14", "PS5_17", "TENIS_13", "TENIS_15", "TENIS_16", "ITALIA_12", "ITALIA_14", "ITALIA_17", "SHOW_13", "SHOW_15", "SHOW_17", "NEGOCIO_14", "NEGOCIO_15", "NEGOCIO_17", "EVENTO_14", "CASACO_12", "NOTEBOOK_16"],
+    "classificationBoundaryFailure": ["GUITARRA_12", "GUITARRA_14", "GUITARRA_17", "DINHEIRO_13", "DINHEIRO_16", "CARREIRA_17"]
+  },
+  "matrix": [
+    {
+      "field": "goal.primaryGoalType",
+      "currentBehavior": "The adapter accepts only the legacy goal_type mapping. Legacy returns other for guitar/learning, saving money and career goals, so the adapter emits null and Composer returns CONTEXT_TOO_WEAK before eligibility.",
+      "affectedCases": ["GUITARRA_12", "GUITARRA_14", "GUITARRA_17", "DINHEIRO_13", "DINHEIRO_16", "CARREIRA_17"],
+      "affectedMissions": ["All missions, because goal type is a Composer entry requirement"],
+      "sourceInCurrentProduct": ["conquests.title", "conquests.reason", "conquests.category (currently always OTHER in the creation UI)", "legacy classifyGoal result", "deterministic V1 classifyGoal rules already cover SKILL, FINANCIAL_GOAL and CAREER_EDUCATION"],
+      "adapterGap": "Yes. The title already contains sufficient deterministic signals, but the adapter never invokes the existing bounded V1 classifier and the legacy classifier lacks these three mappings.",
+      "actuallyRequiredAtJourneyStart": true,
+      "shouldBeGlobalGate": true,
+      "recommendedBehavior": "Resolve the type at the classification boundary using existing deterministic controlled rules; return CONTEXT_TOO_WEAK only when neither stored category nor deterministic title classification is conclusive. Do not ask the user again for these six cases.",
+      "requiresProductChange": false,
+      "requiresEditorialDecision": false,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": false
+    },
+    {
+      "field": "family.parentApprovalAvailable",
+      "currentBehavior": "The adapter always sends false. Eight approval/supervision contracts become ELIGIBLE_IF before their other prerequisites are checked. When no LOW/GUARDED mission passes its empty runtime prerequisites, Composer aggregates the journey result as NEEDS_PARENT_APPROVAL.",
+      "affectedCases": ["PS5_12", "PS5_14", "PS5_17", "TENIS_13", "TENIS_15", "TENIS_16", "ITALIA_12", "ITALIA_14", "ITALIA_17", "SHOW_13", "SHOW_15", "SHOW_17", "NEGOCIO_14", "NEGOCIO_15", "NEGOCIO_17", "EVENTO_14", "CASACO_12", "NOTEBOOK_16"],
+      "affectedMissions": ["M01", "M02", "M08", "M15", "M36", "M40", "M41", "M42"],
+      "sourceInCurrentProduct": ["A Parent family member exists", "parent_profiles exists", "journey review and conquest contract collect later approval", "No per-mission approval exists before initial composition"],
+      "adapterGap": "Partially. Parent presence can be mapped, but presence is not approval and must never be promoted to true.",
+      "actuallyRequiredAtJourneyStart": false,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Unknown approval should eliminate or defer only missions that require approval. It should not prevent safe research, comparison, definition or planning missions. NEEDS_PARENT_APPROVAL should be returned only when an approval-dependent mission is otherwise viable or no safe bootstrap alternative exists for a justified reason.",
+      "requiresProductChange": false,
+      "requiresEditorialDecision": false,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": true
+    },
+    {
+      "field": "family.approvedPeopleRelations",
+      "currentBehavior": "Reported missing in 24/24, but it does not directly cause the current result. Eligibility does not read this array. Third-party missions instead depend on runtime values such as approved_person, recipient, tester or learner; M01 also requires approved_person_relation during materialization.",
+      "affectedCases": {
+        "reportedMissing": 24,
+        "directlyBlockedByThisField": 0
+      },
+      "affectedMissions": ["M01", "M03", "M05", "M06", "M14", "M17", "M21", "M24", "M26", "M28", "M31"],
+      "sourceInCurrentProduct": ["family_members.relationship identifies known family relationships", "profiles/family_members identify members", "No approved external-person registry exists"],
+      "adapterGap": "The adapter does not map known family members, but the recommendation route also does not load the full family member set. Existing family relationships are only a partial equivalent and cannot authorize an external person.",
+      "actuallyRequiredAtJourneyStart": false,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Do not collect a global people list just to start a journey. Ask for or confirm an approved known person only when a selected candidate involves interviewing, offering, testing, helping or teaching another person. Missions without third parties remain eligible.",
+      "requiresProductChange": true,
+      "requiresEditorialDecision": false,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": false
+    },
+    {
+      "field": "family.moneyRules",
+      "currentBehavior": "Reported missing in 24/24, but it is not the cause of any current block. The adapter/normalizer currently supplies conservative credit/debt/loan false values and maxYouthControlledValue is unused. Monetary prerequisites live in mission-specific runtime state or variables.",
+      "affectedCases": {
+        "reportedMissing": 24,
+        "directlyBlockedByThisField": 0
+      },
+      "affectedMissions": ["M01", "M02", "M05", "M08", "M13", "M36", "M40"],
+      "sourceInCurrentProduct": ["conquests.approximate_value", "conquests.confirmed_goal_value after Parent review", "conquests.desired_date", "No family money-policy object exists"],
+      "adapterGap": "The adapter correctly does not invent a budget, but marking all money rules as a journey-start requirement overstates the gap. The normalizer also does not preserve an explicit unknown state for credit/debt/loan policy.",
+      "actuallyRequiredAtJourneyStart": false,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Keep general non-credit safety prohibitions canonical. Request amount, budget period, contribution method or negotiation limits only for the specific mission that needs them. Missing money rules must not block non-financial missions.",
+      "requiresProductChange": true,
+      "requiresEditorialDecision": true,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": true
+    },
+    {
+      "field": "family.permissions",
+      "currentBehavior": "Reported missing in 24/24. Only M01 directly checks FAMILY_PERMISSION(EXTERNAL_VALUE_ATTEMPT). In the current run, parent approval or the M01 age-variant gap is evaluated first, so permissions are a latent mission-specific block rather than the cause of zero selections.",
+      "affectedCases": {
+        "reportedMissing": 24,
+        "directlyBlockedByThisField": 0,
+        "latentWhenM01OtherwiseEligible": true
+      },
+      "affectedMissions": ["M01"],
+      "sourceInCurrentProduct": ["No explicit family permission registry", "Parent journey review exists later", "conquest contracts express final commitments but not pre-composition external-action permission"],
+      "adapterGap": "No equivalent permission can safely be mapped today.",
+      "actuallyRequiredAtJourneyStart": false,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Ask for permission just in time when an external value attempt is being considered. Until then, eliminate M01 and continue with safe alternatives. Do not interpret Parent membership as permission.",
+      "requiresProductChange": true,
+      "requiresEditorialDecision": true,
+      "requiresAdapterChange": false,
+      "requiresComposerChange": false
+    },
+    {
+      "field": "youth.autonomyLevel",
+      "currentBehavior": "Reported missing in 24/24. No MissionContract, eligibility rule or scoring rule currently consumes autonomyLevel. normalizeComposerContext silently defaults it to MEDIUM, but this default has no selection effect today.",
+      "affectedCases": {
+        "reportedMissing": 24,
+        "directlyBlockedByThisField": 0
+      },
+      "affectedMissions": [],
+      "sourceInCurrentProduct": ["parent_profiles.autonomy_level", "Parent onboarding writes GUIDED/BALANCED/INDEPENDENT", "The recommendation route already loads parent_profiles with all columns"],
+      "adapterGap": "Yes. A product field already exists and is loaded, but the adapter ignores it. A controlled mapping GUIDED→GUIDED, BALANCED→MEDIUM, INDEPENDENT→HIGH is possible if product authority confirms semantic equivalence.",
+      "actuallyRequiredAtJourneyStart": false,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Do not gate LOW-safety missions on autonomy. Map the existing field when semantics are approved and use it only for missions whose supervision or instruction level genuinely depends on it. Remove the silent MEDIUM assumption before the field becomes behaviorally relevant.",
+      "requiresProductChange": false,
+      "requiresEditorialDecision": true,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": true
+    },
+    {
+      "field": "runtimeState",
+      "currentBehavior": "The adapter creates an empty {flags:{}, values:{}} object but also reports runtimeState as missing. Every one of M01–M44 has prerequisites and/or produced state. With an empty first-journey state, all safe non-approval candidates fail prerequisites; approval-dependent missions then dominate the aggregate result.",
+      "affectedCases": {
+        "currentClassifiedCases": ["PS5_12", "PS5_14", "PS5_17", "TENIS_13", "TENIS_15", "TENIS_16", "ITALIA_12", "ITALIA_14", "ITALIA_17", "SHOW_13", "SHOW_15", "SHOW_17", "NEGOCIO_14", "NEGOCIO_15", "NEGOCIO_17", "EVENTO_14", "CASACO_12", "NOTEBOOK_16"],
+        "expectedAfterGoalTypeBoundaryFix": 24
+      },
+      "affectedMissions": ["M01–M44: all contracts have journey-start prerequisites, mission-produced state, or both"],
+      "sourceInCurrentProduct": ["conquest title/reason/status provide goal facts", "journeys and journey_missions provide plan/history", "mission_assignments and evidence provide execution history", "recentArchetypeCodes is loaded but not convertible to V1 state", "No persisted V1 state registry exists"],
+      "adapterGap": "Yes, but only partially. No prior V1 history at the first mission correctly means an empty mission-output state. Separately, safe goal facts such as a non-empty defined goal can potentially be derived from conquest data and must not be confused with completed-mission outputs.",
+      "actuallyRequiredAtJourneyStart": true,
+      "shouldBeGlobalGate": false,
+      "recommendedBehavior": "Define a canonical INITIAL runtime state: empty mission history and no produced-state flags, plus only explicitly authorized facts derivable from the conquest. Never set accepted_offer, response_received, real_user_exists or similar action-dependent flags. Ensure at least one editorially valid safe bootstrap path can operate from INITIAL state; currently none is guaranteed.",
+      "requiresProductChange": true,
+      "requiresEditorialDecision": true,
+      "requiresAdapterChange": true,
+      "requiresComposerChange": true
+    }
+  ],
+  "diagnosticCategories": {
+    "A_productShouldCollect": ["Mission-specific permission for external value/sale", "Approved person only when a third-party mission is proposed", "Budget/amount/financial limits only for a money mission"],
+    "B_existsButAdapterDoesNotMap": ["parent_profiles.autonomy_level", "conquest title is sufficient for deterministic V1 classification in the six weak-context cases", "known family relationships exist partially in family_members", "existing journey/assignment history can later feed a V1 state adapter"],
+    "C_requiredTooEarlyOrUnnecessarily": ["Parent approval is checked before other prerequisites and dominates the aggregate no-result code", "autonomy is reported missing globally despite not being consumed", "money rules and approved people are reported as global gaps although they are mission-specific"],
+    "D_onlyMissionSpecific": ["approvedPeopleRelations", "moneyRules", "permissions", "parent approval for M01/M02/M08/M15/M36/M40/M41/M42"],
+    "E_naturallyAbsentAtFirstMission": ["missionHistory", "mission-produced flags", "accepted_offer", "response_received", "delivery_scope", "real tester/user outcomes"],
+    "F_harnessLimitations": ["All 24 cases model a brand-new journey with no V1 execution history", "The harness intentionally provides no per-mission Parent permission or external-person confirmation", "Legacy archetypes are loaded read-only from the migration rather than Supabase", "The product creation UI stores conquest.category as OTHER, so category cannot repair classification", "The harness exposes the sparse current adapter; it does not simulate future contextual questions"]
+  },
+  "minimalRecommendation": [
+    "Fix the deterministic classification boundary for SKILL, FINANCIAL_GOAL and CAREER_EDUCATION using information already present; do not collect more user data for those six cases.",
+    "Define and editorially approve the INITIAL runtime-state contract, separating known goal facts from mission-produced facts.",
+    "Ensure a safe bootstrap mission path exists from INITIAL state for common goals; do not make approval-dependent missions the only otherwise viable candidates.",
+    "Treat Parent approval, people, permissions and money rules as mission-specific gates and request them just in time.",
+    "Map existing autonomy_level only after confirming semantics, and never make it a global gate.",
+    "Rerun the same unchanged 24-case review before collecting human verdicts."
+  ]
+}

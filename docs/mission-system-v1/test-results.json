@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-09-01T12:50:26.445Z",
+  "system": "mission-system-v1-isolated",
+  "summary": {
+    "passed": 21,
+    "failed": 0
+  },
+  "results": [
+    {
+      "script": "validate-registry.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"valid\": true,\n  \"missionCount\": 45,\n  \"catalogCount\": 8,\n  \"completionRuleCount\": 45,\n  \"errors\": []\n}",
+      "stderr": ""
+    },
+    {
+      "script": "validate-canonical-content.mjs",
+      "status": "PASS",
+      "stdout": "{\"pass\":45,\"manualReview\":0,\"fail\":0}",
+      "stderr": ""
+    },
+    {
+      "script": "test-eligibility.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"eligibility\",\n  \"status\": \"PASS\",\n  \"count\": 7\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-state-transitions.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"state-transitions\",\n  \"status\": \"PASS\",\n  \"count\": 2\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-sequences.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"sequences\",\n  \"status\": \"PASS\",\n  \"count\": 6\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-materialization.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"materialization\",\n  \"status\": \"PASS\",\n  \"count\": 5\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-editorial-rules.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"editorial-rules\",\n  \"status\": \"PASS\",\n  \"count\": 1\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-full-journeys.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"full-journeys\",\n  \"status\": \"PASS\",\n  \"count\": 17\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-contract-matrix.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"contract-matrix\",\n  \"status\": \"PASS\",\n  \"missionCount\": 45,\n  \"assertions\": 314,\n  \"failures\": []\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-completion-matrix.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"completion-matrix\",\n  \"status\": \"PASS\",\n  \"count\": 135\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-adversarial.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"adversarial\",\n  \"status\": \"PASS\",\n  \"count\": 28\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-phase1c-editorial.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"phase1c-editorial\",\n  \"status\": \"PASS\",\n  \"count\": 24\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-canonical-content.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"canonical-content\",\n  \"status\": \"PASS\",\n  \"count\": 92\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-content-adversarial.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"content-adversarial\",\n  \"status\": \"PASS\",\n  \"count\": 14\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-integration-readiness.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"integration-readiness\",\n  \"status\": \"PASS\",\n  \"count\": 18\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-safety-e2e.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"safety-e2e\",\n  \"status\": \"PASS\",\n  \"count\": 12\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-determinism.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"determinism\",\n  \"status\": \"PASS\",\n  \"count\": 1\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-performance.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"generatedAt\": \"2026-09-01T12:50:26.154Z\",\n  \"iterations\": 1000,\n  \"network\": false,\n  \"llm\": false,\n  \"supabase\": false,\n  \"status\": \"PASS\",\n  \"threshold\": {\n    \"totalP95Ms\": 100\n  },\n  \"stages\": {\n    \"normalize\": {\n      \"p50Ms\": 0.0013,\n      \"p95Ms\": 0.0038,\n      \"maxMs\": 0.2005\n    },\n    \"eligibility44\": {\n      \"p50Ms\": 0.0099,\n      \"p95Ms\": 0.0168,\n      \"maxMs\": 0.5473\n    },\n    \"scoreCandidates\": {\n      \"p50Ms\": 0.0043,\n      \"p95Ms\": 0.0076,\n      \"maxMs\": 0.2343\n    },\n    \"compose\": {\n      \"p50Ms\": 0.1778,\n      \"p95Ms\": 0.3478,\n      \"maxMs\": 10.4458\n    },\n    \"materialize\": {\n      \"p50Ms\": 0.0158,\n      \"p95Ms\": 0.0282,\n      \"maxMs\": 0.9849\n    },\n    \"total\": {\n      \"p50Ms\": 0.2104,\n      \"p95Ms\": 0.3979,\n      \"maxMs\": 12.4219\n    }\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-shadow-integration.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"shadow-integration\",\n  \"status\": \"PASS\",\n  \"count\": 14\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-shadow-side-effects.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"shadow-side-effects\",\n  \"status\": \"PASS\",\n  \"count\": 3\n}",
+      "stderr": ""
+    },
+    {
+      "script": "test-shadow-review-harness.mjs",
+      "status": "PASS",
+      "stdout": "{\n  \"suite\": \"shadow-review-harness\",\n  \"status\": \"PASS\",\n  \"count\": 6\n}",
+      "stderr": ""
+    }
+  ]
+}

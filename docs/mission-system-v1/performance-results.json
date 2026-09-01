@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-09-01T12:50:26.154Z",
+  "iterations": 1000,
+  "network": false,
+  "llm": false,
+  "supabase": false,
+  "status": "PASS",
+  "threshold": {
+    "totalP95Ms": 100
+  },
+  "stages": {
+    "normalize": {
+      "p50Ms": 0.0013,
+      "p95Ms": 0.0038,
+      "maxMs": 0.2005
+    },
+    "eligibility44": {
+      "p50Ms": 0.0099,
+      "p95Ms": 0.0168,
+      "maxMs": 0.5473
+    },
+    "scoreCandidates": {
+      "p50Ms": 0.0043,
+      "p95Ms": 0.0076,
+      "maxMs": 0.2343
+    },
+    "compose": {
+      "p50Ms": 0.1778,
+      "p95Ms": 0.3478,
+      "maxMs": 10.4458
+    },
+    "materialize": {
+      "p50Ms": 0.0158,
+      "p95Ms": 0.0282,
+      "maxMs": 0.9849
+    },
+    "total": {
+      "p50Ms": 0.2104,
+      "p95Ms": 0.3979,
+      "maxMs": 12.4219
+    }
+  }
+}

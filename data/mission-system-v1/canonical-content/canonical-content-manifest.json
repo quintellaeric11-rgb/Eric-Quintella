@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceDocument": "KONKI_MISSION_BIBLE_V1.md",
+  "sourceDocumentHash": "f361e11a911ba0ed8e96248819a798c96e999b9db18b533641421a2f8ddf23b4",
+  "missions": {
+    "M01": {
+      "contentVersion": "1.0.0",
+      "contentHash": "0df729d5f2a5cd531a3164e4bd8ede3e67a289814130ac4ff9bf752995f020ac",
+      "completionRuleId": "CR_M01"
+    },
+    "M02": {
+      "contentVersion": "1.0.0",
+      "contentHash": "12b7c0873a4beb83a2a2fb46b28400a9a789d2f87075e19b9faa128192971d03",
+      "completionRuleId": "CR_M02"
+    },
+    "M03": {
+      "contentVersion": "1.0.0",
+      "contentHash": "6c5e40abdcd3eaf33f29dafc65351a422ea2b4a4a9ffdb7f5185a211885247fd",
+      "completionRuleId": "CR_M03"
+    },
+    "M04": {
+      "contentVersion": "1.0.0",
+      "contentHash": "59d16c6cf13f5c75a6f9191bf85f372d565cba579896a33954e8b263a21a79c1",
+      "completionRuleId": "CR_M04"
+    },
+    "M05": {
+      "contentVersion": "1.0.0",
+      "contentHash": "6bc251079c169b3896c6d866123f26d38111a1ea57171962c6c95398a1f1d52f",
+      "completionRuleId": "CR_M05"
+    },
+    "M06": {
+      "contentVersion": "1.0.0",
+      "contentHash": "33d671cbec55995ecd326480398f1b2a473a78e187ea8d0da68059a06e98e8a2",
+      "completionRuleId": "CR_M06"
+    },
+    "M07": {
+      "contentVersion": "1.0.0",
+      "contentHash": "19f2c32c48bb637e758f5117f0db358d6db8a715689ab8e968c161076aadbdd8",
+      "completionRuleId": "CR_M07"
+    },
+    "M08": {
+      "contentVersion": "1.0.0",
+      "contentHash": "7ee28d10bc263e48ca8f347e8c2a2ad9a7c11f34c72bd5574304f484e89691fc",
+      "completionRuleId": "CR_M08"
+    },
+    "M09": {
+      "contentVersion": "1.0.0",
+      "contentHash": "acc1f4ae0957d149a983b0e2f4229635bfb8efd4a0b8163d9570e4022be516ae",
+      "completionRuleId": "CR_M09"
+    },
+    "M10": {
+      "contentVersion": "1.0.0",
+      "contentHash": "676c8acccd4aeaacc10c1859736e8ccb585f4036c916205ae71cd659a0efdff9",
+      "completionRuleId": "CR_M10"
+    },
+    "M11": {
+      "contentVersion": "1.0.0",
+      "contentHash": "f348983c7f0678ff68243c8f3a2aa8f7fc0cf3812880af95ef06374f12eb3ee0",
+      "completionRuleId": "CR_M11"
+    },
+    "M12": {
+      "contentVersion": "1.0.0",
+      "contentHash": "47778a046fe7202850acda5edae01d1240ee06a0045cae8591ec31e9f4817804",
+      "completionRuleId": "CR_M12"
+    },
+    "M13": {
+      "contentVersion": "1.0.0",
+      "contentHash": "c30e3cf826357dd04032c4edec0b202f56dcbff87db8f65641648250aeb083eb",
+      "completionRuleId": "CR_M13"
+    },
+    "M14": {
+      "contentVersion": "1.0.0",
+      "contentHash": "7e14265bd5a99effed48c775d6e2d31482da40ff6621d8900fbaa8bce87081a7",
+      "completionRuleId": "CR_M14"
+    },
+    "M15": {
+      "contentVersion": "1.0.0",
+      "contentHash": "b8a6b24dade98d044507ddfea29a4c4f73d69efa048608b6b6fe78082bddbc95",
+      "completionRuleId": "CR_M15"
+    },
+    "M16": {
+      "contentVersion": "1.0.0",
+      "contentHash": "c1a1e6b9e9def7b8be5988cde20bfff5a604689b34c1eff4c1a87cb5de80e245",
+      "completionRuleId": "CR_M16"
+    },
+    "M17": {
+      "contentVersion": "1.0.0",
+      "contentHash": "0afe8115579a766c2b26e3b3d7d9fbb40c39f4ec2e870b64af65a24be3a57942",
+      "completionRuleId": "CR_M17"
+    },
+    "M18": {
+      "contentVersion": "1.0.0",
+      "contentHash": "ff99102c2089fff4b6a59f8e54204db88fc5378c74bac149bc8908adc9be3f8a",
+      "completionRuleId": "CR_M18"
+    },
+    "M19": {
+      "contentVersion": "1.0.0",
+      "contentHash": "f6a1cc46f985488c69b37dbdf2debdc4b831718209292c6f458d293c55589cc0",
+      "completionRuleId": "CR_M19"
+    },
+    "M20": {
+      "contentVersion": "1.0.0",
+      "contentHash": "473c44cc1bdd7b1a00fc477942b5b798cd07017ccafeebc6cbe58b1577311691",
+      "completionRuleId": "CR_M20"
+    },
+    "M21": {
+      "contentVersion": "1.0.0",
+      "contentHash": "61797312ab2280a606fac97d7c4050b31e8b126368857e68de9926248756fd5d",
+      "completionRuleId": "CR_M21"
+    },
+    "M22": {
+      "contentVersion": "1.0.0",
+      "contentHash": "342ce385a138db88577e516eb609bbcf5e5d9637caab9d2312e787487e7353fa",
+      "completionRuleId": "CR_M22"
+    },
+    "M23": {
+      "contentVersion": "1.0.0",
+      "contentHash": "d98fbc57b360ffa39b213a94c1f9fd743eb0a7392615b475540b480f5612e97d",
+      "completionRuleId": "CR_M23"
+    },
+    "M24": {
+      "contentVersion": "1.0.0",
+      "contentHash": "e729b278c4ab9dc92bea1fa615c5d9ede86176d5e9cea77d18b88260b99229a8",
+      "completionRuleId": "CR_M24"
+    },
+    "M25": {
+      "contentVersion": "1.0.0",
+      "contentHash": "d3e9937e89b5616ceea2e72fbf6058eec0d1b510cab55bc073eece4085214bed",
+      "completionRuleId": "CR_M25"
+    },
+    "M26": {
+      "contentVersion": "1.0.0",
+      "contentHash": "ac7310d47a5e51b36861d6a20bceac83034307eadfaea38afa29e62c5b4fb881",
+      "completionRuleId": "CR_M26"
+    },
+    "M27": {
+      "contentVersion": "1.0.0",
+      "contentHash": "c981c05047be05c71bc544058c759a937585785dc7c38a21026e71397484f963",
+      "completionRuleId": "CR_M27"
+    },
+    "M28": {
+      "contentVersion": "1.0.0",
+      "contentHash": "75222ffae2e9bf6b4c317184e4c71943f170965356bd74f71114c1c36f22edd9",
+      "completionRuleId": "CR_M28"
+    },
+    "M29": {
+      "contentVersion": "1.0.0",
+      "contentHash": "09880299c3a77135fe8c8756e3244eef13e75d43fdab9d33da546bb0a51ac804",
+      "completionRuleId": "CR_M29"
+    },
+    "M30": {
+      "contentVersion": "1.0.0",
+      "contentHash": "c76d93ac339abf1c516405040995732e853a53a8a7cb62f045d93dfacb9d6b62",
+      "completionRuleId": "CR_M30"
+    },
+    "M31": {
+      "contentVersion": "1.0.0",
+      "contentHash": "ac80c2e39311cba602127f7a97ce932403b38aca149588329b1abee521b6fdb1",
+      "completionRuleId": "CR_M31"
+    },
+    "M32": {
+      "contentVersion": "1.0.0",
+      "contentHash": "13a6229bbcd6a13a15cff4d702041dd789c6cee9705e1019bc1120ebaba46174",
+      "completionRuleId": "CR_M32"
+    },
+    "M33": {
+      "contentVersion": "1.0.0",
+      "contentHash": "169744225a36bd77b4c747f25a3a4fb7f78b4b342d28f4d2edfc104771434090",
+      "completionRuleId": "CR_M33"
+    },
+    "M34": {
+      "contentVersion": "1.0.0",
+      "contentHash": "11ba6db4a948f89324790d108e391242216b0ec4c9d7bc39b5428298bf7f0928",
+      "completionRuleId": "CR_M34"
+    },
+    "M35": {
+      "contentVersion": "1.0.0",
+      "contentHash": "7376a810250d07a4c517827f8a564072f84ee64aa1efdc1e5cda19c498a28060",
+      "completionRuleId": "CR_M35"
+    },
+    "M36": {
+      "contentVersion": "1.0.0",
+      "contentHash": "f0055d3a0bd6ba9b40e4380d3c7af945c51e72b7fa86bc4a3290f4f1d18b31fd",
+      "completionRuleId": "CR_M36"
+    },
+    "M37": {
+      "contentVersion": "1.0.0",
+      "contentHash": "e5d16a08a9123ff16f1787275ee0f4f0b6fd5572dbab83ecb56b2190f00c2afb",
+      "completionRuleId": "CR_M37"
+    },
+    "M38": {
+      "contentVersion": "1.0.0",
+      "contentHash": "9e532396c817a932f371f6010600776b7a33ace4c41bb782383ee2ceed6d772f",
+      "completionRuleId": "CR_M38"
+    },
+    "M39": {
+      "contentVersion": "1.0.0",
+      "contentHash": "d4500c32a5d38ee6da58f3354d4db2867546c5dd440f2d204069b99787d7929a",
+      "completionRuleId": "CR_M39"
+    },
+    "M40": {
+      "contentVersion": "1.0.0",
+      "contentHash": "924eea1b6551a260879ef1216f288e1a01db78fc71928aebf5caa0ac8abb3215",
+      "completionRuleId": "CR_M40"
+    },
+    "M41": {
+      "contentVersion": "1.0.0",
+      "contentHash": "7c855fa5854d18ebc681c9143d096c036d1da33d38c598bf5143791603caf5e0",
+      "completionRuleId": "CR_M41"
+    },
+    "M42": {
+      "contentVersion": "1.0.0",
+      "contentHash": "4f04ab92c1ad314df375a08066552923cc3804929ecd6c6540790b1fec16bdf4",
+      "completionRuleId": "CR_M42"
+    },
+    "M43": {
+      "contentVersion": "1.0.0",
+      "contentHash": "7858ddd9f7cc959f48362d6d8a9f29f2d0eec623944e77c0727816558791e9c7",
+      "completionRuleId": "CR_M43"
+    },
+    "M44": {
+      "contentVersion": "1.0.0",
+      "contentHash": "aad8d409da99d7db616ccde90fe3db454d9accc63acdc936874d6060c72eaf59",
+      "completionRuleId": "CR_M44"
+    },
+    "M45": {
+      "contentVersion": "1.0.0",
+      "contentHash": "3906c53128fa00f1ed3d7d0830142878fe6dd3be39be142987a5f6c85a7f5705",
+      "completionRuleId": "CR_M45"
+    }
+  }
+}

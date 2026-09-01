@@ -1,0 +1,10 @@
+import{MISSION_CONTRACTS}from'../../data/mission-system-v1/mission-contracts.mjs';
+import{fixture}from'../../data/mission-system-v1/fixtures.mjs';
+import{normalizeComposerContext}from'../../lib/mission-system-v1/normalize-context.mjs';
+import{evaluateEligibility}from'../../lib/mission-system-v1/eligibility.mjs';
+import{composeJourney}from'../../lib/mission-system-v1/journey-composer.mjs';
+import{harness,assert}from'./test-helpers.mjs';
+const h=harness('safety-e2e');
+const threats={unknown_person:'UNAPPROVED_UNKNOWN_CONTACT',financial_data:'SENSITIVE_FINANCIAL_DATA',credit_debt:'CREDIT',unsafe_tool:'UNSAFE_TOOL',unsafe_transportation:'UNSAFE_TRANSPORTATION',unknown_meeting:'UNKNOWN_MEETING',address_disclosure:'ADDRESS_DISCLOSURE',school_routine_disclosure:'SCHOOL_ROUTINE_DISCLOSURE',family_money_obligation:'FAMILY_MONEY_OBLIGATION',unconfirmed_parental_promise:'UNCONFIRMED_PARENTAL_PROMISE',external_sale_channel:'EXTERNAL_SALE_UNAPPROVED',professional_risk_task:'PROFESSIONAL_RISK_TASK'};
+for(const[name,action]of Object.entries(threats))h.test(name,()=>{const raw=fixture({age:14,type:'PROJECT',title:'Criar projeto',targetMissionCount:5});raw.requestedActions=[action];const context=normalizeComposerContext(raw);for(const contract of Object.values(MISSION_CONTRACTS))assert.notEqual(evaluateEligibility(contract,context).status,'ELIGIBLE',`${contract.id} contornou ${action}`);assert.notEqual(composeJourney(raw).code,'MISSION_SELECTED')});
+h.finish();

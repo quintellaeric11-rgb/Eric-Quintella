@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-09-01T01:35:04.527Z",
+  "missionComposerTechStatus": "READY_FOR_SHADOW_INTEGRATION",
+  "m01VariantAudit": {
+    "missionId": "M01",
+    "eligibleAgesContract": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "availableCanonicalVariants": [
+      {
+        "minAge": 12,
+        "maxAge": 12
+      },
+      {
+        "minAge": 14,
+        "maxAge": 14
+      },
+      {
+        "minAge": 17,
+        "maxAge": 17
+      }
+    ],
+    "mismatches": [
+      13,
+      15,
+      16
+    ],
+    "runtimeConsequence": "M01 is excluded by canonicalVariant hard filter before scoring and selection; if no alternative exists, EDITORIAL_VARIANT_GAP is returned.",
+    "recommendedEditorialDecision": "Product/editorial authority must decide whether 12/14/17 are exact variants, age-band anchors, or whether new canonical variants should be authored. Runtime does not infer this."
+  },
+  "scorecard": [
+    {
+      "criterion": "CONTRACT_COMPLETENESS",
+      "status": "PASS",
+      "reason": "44 contracts validated",
+      "evidence": "registry and contract matrix"
+    },
+    {
+      "criterion": "CONTENT_PARITY",
+      "status": "PASS",
+      "reason": "44/44 canonical parity",
+      "evidence": "canonical-content-parity.json"
+    },
+    {
+      "criterion": "END_TO_END",
+      "status": "PASS",
+      "reason": "15 required scenarios covered; 10 full positive pipelines",
+      "evidence": "test-integration-readiness.mjs"
+    },
+    {
+      "criterion": "REPLANNING",
+      "status": "PASS",
+      "reason": "real mutations/history drive deterministic replanning; expected state remains isolated",
+      "evidence": "test-integration-readiness.mjs"
+    },
+    {
+      "criterion": "CATALOG_COVERAGE",
+      "status": "PASS_WITH_LIMITATION",
+      "reason": "Catalogs remain MINIMUM_VIABLE_CONTENT; none integration-blocking",
+      "evidence": "catalog-audit.json"
+    },
+    {
+      "criterion": "MANUAL_REVIEW_OPERABILITY",
+      "status": "PASS",
+      "reason": "26/26 rules have owner, stage, enforcement and evidence",
+      "evidence": "manual-review-operational-plan.json"
+    },
+    {
+      "criterion": "RESULT_TAXONOMY",
+      "status": "PASS",
+      "reason": "13 integration-facing outcomes classified",
+      "evidence": "runtime-result-taxonomy.json"
+    },
+    {
+      "criterion": "CURRENT_PRODUCT_DATA_COMPATIBILITY",
+      "status": "PASS_WITH_LIMITATION",
+      "reason": "Adapters and future product/persistence inputs are explicitly mapped",
+      "evidence": "runtime-data-gap.json"
+    },
+    {
+      "criterion": "SAFETY",
+      "status": "PASS",
+      "reason": "12 requested minor-safety red-team classes blocked across 44 contracts",
+      "evidence": "test-safety-e2e.mjs"
+    },
+    {
+      "criterion": "DETERMINISM",
+      "status": "PASS",
+      "reason": "1000 repeated compose/materialize runs identical",
+      "evidence": "test-determinism.mjs"
+    },
+    {
+      "criterion": "VERSION_COMPATIBILITY",
+      "status": "PASS",
+      "reason": "44/44 compatible and incompatible set rejected",
+      "evidence": "test-integration-readiness.mjs"
+    },
+    {
+      "criterion": "PERFORMANCE",
+      "status": "PASS",
+      "reason": "1000 local runs; total p95 0.1947 ms",
+      "evidence": "performance-results.json"
+    },
+    {
+      "criterion": "SHADOW_MODE_DESIGN",
+      "status": "PASS",
+      "reason": "Boundary and zero-side-effect contract documented",
+      "evidence": "shadow-mode-design.md"
+    }
+  ],
+  "blockers": [],
+  "restrictionsConfirmed": [
+    "NO MIGRATION",
+    "NO SUPABASE",
+    "NO PRODUCT INTEGRATION",
+    "NO COMMIT",
+    "NO PUSH",
+    "NO DEPLOY"
+  ]
+}

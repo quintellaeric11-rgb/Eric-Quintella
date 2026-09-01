@@ -1,0 +1,1762 @@
+{
+  "generatedAt": "2026-08-31T23:47:11.304Z",
+  "source": "KONKI_MISSION_SYSTEM_RULES_V1.md + decisões canônicas Fase 1C",
+  "total": 116,
+  "totals": {
+    "AUTOMATED": 60,
+    "STRUCTURAL": 30,
+    "MANUAL_REVIEW": 26,
+    "UNRESOLVED": 0
+  },
+  "rules": [
+    {
+      "rule": 1,
+      "text": "Jovem de 12 anos querendo PS5 não recebe M10.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 2,
+      "text": "Jovem de 17 anos com projeto e cliente que aceitou uma entrega pode receber M06.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 3,
+      "text": "M06 nunca aparece antes de existir aceite/destinatário real.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 4,
+      "text": "M05 nunca inventa uma oferta.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 5,
+      "text": "M02 nunca presume que um item da casa pertence ao jovem.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 6,
+      "text": "M08 nunca negocia crédito, dívida ou contrato.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 7,
+      "text": "M09 nunca é usada em conflito familiar sério.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 8,
+      "text": "M03 permanece DISCOVERY mesmo quando a entrevista é muito relevante.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 9,
+      "text": "M07 não aparece numa conquista simples de produto apenas para adicionar “educação financeira”.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 10,
+      "text": "M01 pode ser concluída com uma tentativa real que recebeu “não”.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 11,
+      "text": "Interesse por futebol pode mudar exemplo/formato, mas não liberar missão bloqueada.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 12,
+      "text": "Score alto nunca supera filtro de idade ou segurança.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 13,
+      "text": "Se nenhuma missão for elegível, o sistema retorna `NO_ELIGIBLE_MISSION`.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 14,
+      "text": "Duas missões de interação muito parecidas não são colocadas em sequência quando existe alternativa coerente.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "PRE_MATERIALIZATION"
+    },
+    {
+      "rule": 15,
+      "text": "Nenhum campo factual de preço, pessoa, feedback ou resposta é inventado.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 16,
+      "text": "M11 nunca aparece quando a decisão é urgente ou não pode esperar.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 17,
+      "text": "M11 pode terminar com o jovem ainda querendo comprar.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 18,
+      "text": "M12 nunca inventa notas, preços ou características das opções.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 19,
+      "text": "M12 não trata maior pontuação como ordem automática.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 20,
+      "text": "M13 só aparece quando existe trade-off real e relevante.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 21,
+      "text": "M13 nunca inventa uma segunda opção apenas para ensinar custo de oportunidade.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 22,
+      "text": "M14 nunca usa três pessoas aleatórias quando existe público específico.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 23,
+      "text": "M14 não considera “gostei” como validação suficiente.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 24,
+      "text": "M15 exige que o jovem consiga dizer o que o faria mudar de ideia.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 25,
+      "text": "M15 não escreve a defesa pelo jovem.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 26,
+      "text": "M16 nunca inventa um problema pertencente a outra pessoa.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 27,
+      "text": "M16 bloqueia problemas que exigem conhecimento profissional ou apresentam risco.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 28,
+      "text": "M17 exige uso/teste real quando isso for possível.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 29,
+      "text": "M17 e M04 não aparecem em sequência quando produziriam praticamente a mesma experiência.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 30,
+      "text": "M18 nunca cria dificuldade apenas por dificuldade.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 31,
+      "text": "Toda restrição de M18 precisa desenvolver uma habilidade identificável.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 32,
+      "text": "M19 nunca aparece sem uma primeira versão real.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 33,
+      "text": "M19 nunca inventa feedback ou melhoria.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 34,
+      "text": "M20 nunca inventa um interessado.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 35,
+      "text": "M20 deve perder para M16/M17 quando o ciclo completo for desnecessariamente pesado.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 36,
+      "text": "M11–M15 não podem formar uma sequência longa de “pensar sobre decisões” sem ação real entre elas.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "POST_JOURNEY"
+    },
+    {
+      "rule": 37,
+      "text": "M16–M20 não podem formar uma sequência longa de projetos HEAVY.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "POST_JOURNEY"
+    },
+    {
+      "rule": 38,
+      "text": "O score continua incapaz de superar idade, segurança ou pré-requisito.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 39,
+      "text": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "PRE_MATERIALIZATION"
+    },
+    {
+      "rule": 40,
+      "text": "Se o estado necessário não existe, retornar `PREREQUISITE_MISSING` ou escolher outra missão elegível em vez de inventá-lo.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 41,
+      "text": "M21 nunca inventa uma habilidade para o jovem.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 42,
+      "text": "M21 cria evidência concreta, não apenas declaração de habilidade.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 43,
+      "text": "M22 só aparece quando a conquista realmente envolve construir/criar algo.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 44,
+      "text": "M22 nunca exige produto completo antes do primeiro teste.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 45,
+      "text": "M22 não conclui com planejamento sem colocar nada no mundo.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 46,
+      "text": "M23 precisa testar entendimento com outra pessoa.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 47,
+      "text": "M23 não se transforma automaticamente em pitch de venda.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 48,
+      "text": "M24 só aparece quando existe pergunta real e pessoa adequada.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 49,
+      "text": "M24 não deve substituir pesquisa factual simples.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 50,
+      "text": "M25 nunca exige receber “sim”.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 51,
+      "text": "M25 bloqueia pressão, culpa e insistência.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 52,
+      "text": "M26 não transforma networking em pedido de favor.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 53,
+      "text": "M26 nunca inventa pessoa ou conversa.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 54,
+      "text": "M27 exige necessidade real.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 55,
+      "text": "M27 não permite atuação em área profissional de risco.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 56,
+      "text": "M28 só aparece quando o jovem sabe o suficiente para ensinar.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 57,
+      "text": "M28 só conclui quando a outra pessoa tenta fazer.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 58,
+      "text": "M29 nunca inventa baseline.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 59,
+      "text": "M29 usa condições comparáveis sempre que possível.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 60,
+      "text": "M29 pode concluir mesmo se a evolução for pequena.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 61,
+      "text": "M30 trava critérios antes do desafio.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 62,
+      "text": "M30 nunca escolhe critérios depois para fazer o jovem “passar”.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 63,
+      "text": "M30 pode concluir mesmo se alguns critérios não forem atingidos.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 64,
+      "text": "M21, M29 e M30 não aparecem juntas numa jornada curta sem justificativa excepcional.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 65,
+      "text": "M23, M24, M25 e M26 não formam sequência longa de conversas.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 66,
+      "text": "M27 e M28 não repetem a mesma experiência apenas trocando o verbo “ajudar” por “ensinar”.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 67,
+      "text": "M22 continua impedida por falta de tester/contexto real mesmo com score alto.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 68,
+      "text": "Nenhuma resposta, feedback, aprendizado ou avaliação de terceiro pode ser inventada.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 69,
+      "text": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 70,
+      "text": "Se a habilidade declarada não estiver registrada ou demonstrável, retornar `PREREQUISITE_MISSING` em vez de inventá-la.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "data/mission-system-v1/mission-contracts.mjs",
+        "lib/mission-system-v1/eligibility.mjs",
+        "lib/mission-system-v1/completion-validator.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-completion-matrix.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 71,
+      "text": "M31 nunca conclui sem outra pessoa tentar usar o tutorial.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 72,
+      "text": "Durante o teste da M31, o jovem não pode completar as lacunas verbalmente.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "POST_JOURNEY"
+    },
+    {
+      "rule": 73,
+      "text": "M32 não reinicia automaticamente após um dia esquecido.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 74,
+      "text": "M32 registra lembretes recebidos, não apenas dias marcados.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 75,
+      "text": "M32 nunca vira streak permanente.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 76,
+      "text": "M33 exige responsabilidade com consequência real.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 77,
+      "text": "M33 nunca atribui responsabilidade insegura.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 78,
+      "text": "Pedir ajuda na M33 não significa automaticamente falhar.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 79,
+      "text": "M34 nunca cria uma semana que ignora deslocamento, sono ou compromissos fixos.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 80,
+      "text": "M34 não premia agenda lotada.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 81,
+      "text": "M35 só aparece quando existe aplicação real no dia 7.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 82,
+      "text": "M35 não promete domínio de habilidade em sete dias.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 83,
+      "text": "Assistir tutorial sem praticar não satisfaz M35.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 84,
+      "text": "M36 nunca define orçamento sem input/aprovação familiar.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 85,
+      "text": "M36 nunca solicita dados bancários sensíveis.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 86,
+      "text": "M36 nunca usa crédito, dívida, empréstimo ou investimento.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 87,
+      "text": "M37 só aparece para meta realmente longa.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 88,
+      "text": "M37 nunca aparece para compra simples apenas para “ensinar planejamento”.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 89,
+      "text": "M37 exige primeiro passo iniciado, não apenas plano escrito.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 90,
+      "text": "M38 só aparece quando existem opções reais.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 91,
+      "text": "M38 nunca inventa preço ou especificação.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 92,
+      "text": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 93,
+      "text": "M39 exige dúvida definida antes do teste.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 94,
+      "text": "M39 trava o critério de observação antes do teste.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 95,
+      "text": "M39 nunca sugere teste inseguro.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 96,
+      "text": "M40 não exige contribuição financeira.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 97,
+      "text": "M40 nunca define sozinho quanto o jovem deve contribuir.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 98,
+      "text": "M40 não transforma desigualdade de renda familiar em diferença de progresso pedagógico.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 99,
+      "text": "M41 só usa cuidados presentes em catálogo aprovado.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 100,
+      "text": "M41 nunca inventa manutenção técnica.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 101,
+      "text": "M41 não repete M32 com outro objeto sem mudança pedagógica real.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "EDITORIAL_QA"
+    },
+    {
+      "rule": 102,
+      "text": "M42 nunca inventa promessa do responsável.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 103,
+      "text": "M42 só registra aceite quando houve aceite real.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 104,
+      "text": "M42 precisa deixar claro o compromisso dos dois lados.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 105,
+      "text": "M43 nunca materializa “faça algo relacionado à conquista”.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 106,
+      "text": "Toda M43 precisa terminar com uma parte concreta mais pronta do que antes.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 107,
+      "text": "M44 escolhe um risco principal, não uma lista de tragédias.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 108,
+      "text": "M44 nunca inventa risco catastrófico para aumentar dificuldade.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 109,
+      "text": "Plano B de M44 precisa ser financeiramente e operacionalmente plausível.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs",
+        "scripts/mission-system-v1/test-phase1c-editorial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 110,
+      "text": "Nenhum score supera catálogo, idade, segurança ou pré-requisito.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 111,
+      "text": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+      "status": "MANUAL_REVIEW",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana.",
+      "manualReviewStage": "POST_JOURNEY"
+    },
+    {
+      "rule": 112,
+      "text": "M40 e M43 não podem representar exatamente a mesma ação.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 113,
+      "text": "M32, M33 e M41 não podem formar sequência repetitiva de “provar responsabilidade”.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 114,
+      "text": "M34, M37, M43 e M44 não podem criar uma sequência puramente de planejamento.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 115,
+      "text": "Missões multiday não são empilhadas de forma a gerar carga impraticável.",
+      "status": "AUTOMATED",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    },
+    {
+      "rule": 116,
+      "text": "Nenhuma informação factual de valor, produto, risco, acordo, resposta, pessoa ou resultado pode ser inventada.",
+      "status": "STRUCTURAL",
+      "implementation": [
+        "lib/mission-system-v1/sequence-validator.mjs",
+        "lib/mission-system-v1/mission-materializer.mjs",
+        "data/mission-system-v1/mission-blockers.mjs"
+      ],
+      "tests": [
+        "scripts/mission-system-v1/test-adversarial.mjs"
+      ],
+      "notes": "Garantia rastreada na infraestrutura isolada.",
+      "manualReviewStage": null
+    }
+  ]
+}

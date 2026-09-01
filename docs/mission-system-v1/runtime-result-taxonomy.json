@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-09-01T01:35:04.527Z",
+  "note": "Semantic meanings only; final UI copy intentionally not defined.",
+  "results": [
+    {
+      "code": "MISSION_SELECTED",
+      "layer": "COMPOSER",
+      "recoverable": true,
+      "whoCanResolve": "SYSTEM",
+      "requiredNextAction": "Proceed to version check and canonical materialization",
+      "safeUserFacingMeaning": "A canonical mission candidate is available."
+    },
+    {
+      "code": "NO_ELIGIBLE_MISSION",
+      "layer": "COMPOSER",
+      "recoverable": true,
+      "whoCanResolve": "YOUTH_OR_PARENT",
+      "requiredNextAction": "Provide safer/more complete context or end the journey",
+      "safeUserFacingMeaning": "No mission safely fits the current state."
+    },
+    {
+      "code": "NEEDS_PARENT_APPROVAL",
+      "layer": "ELIGIBILITY",
+      "recoverable": true,
+      "whoCanResolve": "PARENT",
+      "requiredNextAction": "Provide or deny explicit approval",
+      "safeUserFacingMeaning": "A responsible adult decision is required."
+    },
+    {
+      "code": "NEEDS_USER_INPUT",
+      "layer": "MATERIALIZER",
+      "recoverable": true,
+      "whoCanResolve": "YOUTH_OR_PARENT",
+      "requiredNextAction": "Supply the named deterministic input",
+      "safeUserFacingMeaning": "Required factual input is missing."
+    },
+    {
+      "code": "PREREQUISITE_MISSING",
+      "layer": "ELIGIBILITY",
+      "recoverable": true,
+      "whoCanResolve": "SYSTEM_OR_USER",
+      "requiredNextAction": "Complete the prerequisite before retrying",
+      "safeUserFacingMeaning": "A preceding real-world state has not been proven."
+    },
+    {
+      "code": "CONTEXT_TOO_WEAK",
+      "layer": "CLASSIFIER",
+      "recoverable": true,
+      "whoCanResolve": "YOUTH",
+      "requiredNextAction": "Clarify the goal",
+      "safeUserFacingMeaning": "The goal cannot be classified safely yet."
+    },
+    {
+      "code": "CANONICAL_VARIANT_NOT_AVAILABLE",
+      "layer": "MATERIALIZER",
+      "recoverable": false,
+      "whoCanResolve": "PRODUCT_TEAM",
+      "requiredNextAction": "Do not render; log editorial gap",
+      "safeUserFacingMeaning": "No authorized age variant exists."
+    },
+    {
+      "code": "CANONICAL_CONTENT_NOT_LOADED",
+      "layer": "MATERIALIZER",
+      "recoverable": false,
+      "whoCanResolve": "ENGINEERING",
+      "requiredNextAction": "Restore the versioned canonical registry",
+      "safeUserFacingMeaning": "Canonical content is unavailable."
+    },
+    {
+      "code": "CATALOG_ENTRY_NOT_AVAILABLE",
+      "layer": "ELIGIBILITY",
+      "recoverable": true,
+      "whoCanResolve": "PRODUCT_TEAM_OR_PARENT",
+      "requiredNextAction": "Supply an approved catalog entry or choose another mission",
+      "safeUserFacingMeaning": "An approved bounded option is unavailable."
+    },
+    {
+      "code": "EDITORIAL_VARIANT_GAP",
+      "layer": "ELIGIBILITY",
+      "recoverable": false,
+      "whoCanResolve": "PRODUCT_TEAM",
+      "requiredNextAction": "Resolve age-variant authority before enabling the mission",
+      "safeUserFacingMeaning": "The contract and canonical age coverage disagree."
+    },
+    {
+      "code": "MISSION_PENDING_AGREEMENT",
+      "layer": "COMPLETION",
+      "recoverable": true,
+      "whoCanResolve": "YOUTH_AND_PARENT",
+      "requiredNextAction": "Collect both independent confirmations",
+      "safeUserFacingMeaning": "The agreement is not accepted by both parties."
+    },
+    {
+      "code": "INCOMPLETE_SUBMISSION",
+      "layer": "COMPLETION",
+      "recoverable": true,
+      "whoCanResolve": "YOUTH",
+      "requiredNextAction": "Provide missing action, fact, or evidence",
+      "safeUserFacingMeaning": "The completion proof is incomplete."
+    },
+    {
+      "code": "VERSION_INCOMPATIBLE",
+      "layer": "RUNTIME",
+      "recoverable": false,
+      "whoCanResolve": "ENGINEERING",
+      "requiredNextAction": "Use an explicitly compatible version set",
+      "safeUserFacingMeaning": "Runtime artifacts belong to incompatible versions."
+    }
+  ]
+}

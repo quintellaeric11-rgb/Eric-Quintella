@@ -1,0 +1,3904 @@
+{
+  "generatedAt": "2026-09-01T02:26:38.278Z",
+  "allowedVerdicts": [
+    "V1_BETTER",
+    "LEGACY_BETTER",
+    "TIE",
+    "BOTH_BAD"
+  ],
+  "instructions": "Edit only review.humanVerdict and review.humanNotes, then rerun the harness. No verdict changes either engine.",
+  "cases": [
+    {
+      "id": "PS5_12",
+      "context": {
+        "goal": "Quero comprar um PS5",
+        "reason": "Quero jogar com meus amigos e cuidar do que é meu.",
+        "age": 12,
+        "interests": [
+          "Games",
+          "Tecnologia"
+        ],
+        "parentGoals": [
+          "Educação financeira",
+          "Responsabilidade"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "DC01",
+          "title": "Compare duas opções de PlayStation 5",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no PlayStation 5 que você quer.",
+          "steps": [
+            "Conte ao seu responsável o que você entendeu.",
+            "Investigue informações reais sobre o PlayStation 5 que você quer e compare o que encontrou.",
+            "Faça uma escolha ou melhoria pequena.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Envie uma prova simples do seu esforço. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "PS5_14",
+      "context": {
+        "goal": "Quero comprar um PS5",
+        "reason": "Quero aprender a planejar e escolher bem.",
+        "age": 14,
+        "interests": [
+          "Games",
+          "Vídeos"
+        ],
+        "parentGoals": [
+          "Tomada de decisão",
+          "Educação financeira"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o PlayStation 5 que você quer",
+          "category": "CONQUEST",
+          "why": "Você vai avançar no PlayStation 5 que você quer enquanto pratica tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o PlayStation 5 que você quer e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 100,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "PS5_17",
+      "context": {
+        "goal": "Quero comprar um PS5",
+        "reason": "Quero avaliar se vale o custo e contribuir para a compra.",
+        "age": 17,
+        "interests": [
+          "Tecnologia",
+          "Empreendedorismo"
+        ],
+        "parentGoals": [
+          "Pensamento crítico",
+          "Autonomia"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 14,
+        "firstMission": {
+          "missionId": "DC01",
+          "title": "Compare alternativas com critérios ponderados",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai avançar no PlayStation 5 que você quer enquanto pratica pensamento crítico e tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre o PlayStation 5 que você quer e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "TENIS_13",
+      "context": {
+        "goal": "Quero comprar um tênis",
+        "reason": "Estou precisando para usar todos os dias.",
+        "age": 13,
+        "interests": [
+          "Esportes",
+          "Moda"
+        ],
+        "parentGoals": [
+          "Responsabilidade",
+          "Educação financeira"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 8,
+        "firstMission": {
+          "missionId": "DC01",
+          "title": "Compare opções reais para a peça que você quer",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar na peça que você quer.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre a peça que você quer e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "TENIS_15",
+      "context": {
+        "goal": "Quero comprar um tênis para treinar",
+        "reason": "Quero comparar conforto, preço e durabilidade.",
+        "age": 15,
+        "interests": [
+          "Corrida",
+          "Esportes"
+        ],
+        "parentGoals": [
+          "Tomada de decisão",
+          "Autonomia"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 8,
+        "firstMission": {
+          "missionId": "CQ10",
+          "title": "Espere um pouco antes da decisão final",
+          "category": "CONQUEST",
+          "why": "Você vai avançar na peça que você quer enquanto pratica disciplina e tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Teste uma rotina curta que ajude você a avançar na peça que você quer por alguns dias.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Mostre o registro dos dias e conte o que ajudou ou atrapalhou."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Mostre o registro dos dias e conte o que ajudou ou atrapalhou."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "TENIS_16",
+      "context": {
+        "goal": "Quero comprar um tênis novo",
+        "reason": "Quero pagar uma parte e fazer uma escolha consciente.",
+        "age": 16,
+        "interests": [
+          "Moda",
+          "Empreendedorismo"
+        ],
+        "parentGoals": [
+          "Educação financeira",
+          "Iniciativa"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "DC05",
+          "title": "Aprofunde a análise: resolva primeiro sozinho",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai avançar na peça que você quer enquanto pratica autonomia, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre a peça que você quer e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "ITALIA_12",
+      "context": {
+        "goal": "Quero viajar para a Itália",
+        "reason": "Quero conhecer Roma com minha família.",
+        "age": 12,
+        "interests": [
+          "Viagens",
+          "História"
+        ],
+        "parentGoals": [
+          "Organização",
+          "Comunicação"
+        ],
+        "legacyGoalType": "travel",
+        "v1GoalType": "TRAVEL"
+      },
+      "legacyResult": {
+        "missionCount": 18,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Deixe claro qual viagem para a Itália você quer",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar na viagem para a Itália.",
+          "steps": [
+            "Conte ao seu responsável o que você entendeu.",
+            "Investigue informações reais sobre a viagem para a Itália e compare o que encontrou.",
+            "Faça uma escolha ou melhoria pequena.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Envie uma prova simples do seu esforço. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "TRAVEL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "ITALIA_14",
+      "context": {
+        "goal": "Quero fazer uma viagem para a Itália",
+        "reason": "Quero conhecer outra cultura e ajudar no planejamento.",
+        "age": 14,
+        "interests": [
+          "Viagens",
+          "Culinária"
+        ],
+        "parentGoals": [
+          "Autonomia",
+          "Organização"
+        ],
+        "legacyGoalType": "travel",
+        "v1GoalType": "TRAVEL"
+      },
+      "legacyResult": {
+        "missionCount": 18,
+        "firstMission": {
+          "missionId": "DC05",
+          "title": "Resolva primeiro sozinho",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai avançar na viagem para a Itália enquanto pratica autonomia, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre a viagem para a Itália e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 100,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "TRAVEL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "ITALIA_17",
+      "context": {
+        "goal": "Quero viajar para a Itália",
+        "reason": "Quero montar um plano realista de custos e roteiro.",
+        "age": 17,
+        "interests": [
+          "Viagens",
+          "Fotografia"
+        ],
+        "parentGoals": [
+          "Pensamento crítico",
+          "Educação financeira"
+        ],
+        "legacyGoalType": "travel",
+        "v1GoalType": "TRAVEL"
+      },
+      "legacyResult": {
+        "missionCount": 22,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para a viagem para a Itália",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar na viagem para a Itália.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre a viagem para a Itália e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "TRAVEL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "SHOW_13",
+      "context": {
+        "goal": "Quero ir a um show",
+        "reason": "É a banda que eu mais gosto.",
+        "age": 13,
+        "interests": [
+          "Música"
+        ],
+        "parentGoals": [
+          "Responsabilidade",
+          "Comunicação"
+        ],
+        "legacyGoalType": "experience",
+        "v1GoalType": "EXPERIENCE"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o show que você quer viver",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no show que você quer viver.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o show que você quer viver e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "EXPERIENCE",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "SHOW_15",
+      "context": {
+        "goal": "Quero ir a um festival",
+        "reason": "Quero organizar transporte, ingresso e segurança.",
+        "age": 15,
+        "interests": [
+          "Música",
+          "Eventos"
+        ],
+        "parentGoals": [
+          "Organização",
+          "Autonomia"
+        ],
+        "legacyGoalType": "experience",
+        "v1GoalType": "EXPERIENCE"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o show que você quer viver",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no show que você quer viver.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o show que você quer viver e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 100,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "EXPERIENCE",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "SHOW_17",
+      "context": {
+        "goal": "Quero ir a um show em outra cidade",
+        "reason": "Quero decidir se o custo e a logística fazem sentido.",
+        "age": 17,
+        "interests": [
+          "Música",
+          "Viagens"
+        ],
+        "parentGoals": [
+          "Tomada de decisão",
+          "Pensamento crítico"
+        ],
+        "legacyGoalType": "experience",
+        "v1GoalType": "EXPERIENCE"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para o show que você quer viver",
+          "category": "CONQUEST",
+          "why": "Você vai avançar no show que você quer viver enquanto pratica tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre o show que você quer viver e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M43",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "DIRECT_GOAL_PREP",
+          "experiencePattern": "DIRECT_GOAL_PREP",
+          "goalType": "EXPERIENCE",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M43",
+        "title": "Prepare uma parte real da sua conquista",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M43",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Prepare uma parte que sua conquista realmente precisa\n\nSua conquista tem várias partes.\n\nHoje você vai pegar uma delas e deixar pronta.\n\nQuando terminar, alguma coisa concreta precisa ter avançado.\n\n---\n"
+          },
+          {
+            "heading": "1. Descubra o que ainda falta",
+            "type": "STEPS",
+            "content": "## 1. Descubra o que ainda falta\n\nA KONKI mostra opções aprovadas de acordo com a conquista.\n\nViagem\n\n- montar parte da rota;\n- pesquisar transporte;\n- preparar lista de itens;\n- pesquisar documentos necessários sem enviar dados pessoais;\n- organizar um dia do roteiro;\n- aprender uma frase útil;\n- preparar orçamento de uma parte.\n\nEvento\n\n- fazer lista de convidados;\n- organizar materiais;\n- montar programação;\n- preparar comunicação;\n- conferir um fornecedor com adulto responsável.\n\nHabilidade\n\n- escolher equipamento adequado;\n- preparar espaço;\n- selecionar material;\n- montar rotina curta de prática.\n\nProjeto\n\n- preparar primeira entrega;\n- organizar arquivos;\n- definir participantes;\n- criar material necessário.\n\n---\n"
+          },
+          {
+            "heading": "2. Escolha só uma parte",
+            "type": "STEPS",
+            "content": "## 2. Escolha só uma parte\n\nA missão não é “organize a viagem”.\n\nÉ:\n\n“Monte o plano de deslocamento do aeroporto até o hotel.”\n\nPequeno.\n\nConcreto.\n\nTerminável.\n\n---\n"
+          },
+          {
+            "heading": "3. Descubra o que precisa saber",
+            "type": "STEPS",
+            "content": "## 3. Descubra o que precisa saber\n\nAntes de executar, pergunte:\n\nQue informação eu preciso para fazer isso direito?\n\nPesquise apenas o necessário.\n\n---\n"
+          },
+          {
+            "heading": "4. Faça",
+            "type": "STEPS",
+            "content": "## 4. Faça\n\nCrie o resultado.\n\nExemplos:\n\n- roteiro;\n- checklist;\n- documento sem dados sensíveis;\n- planilha;\n- reserva simulada;\n- material;\n- criação;\n- preparação física.\n\n---\n"
+          },
+          {
+            "heading": "5. Confira com alguém",
+            "type": "STEPS",
+            "content": "## 5. Confira com alguém\n\nSe essa parte afeta outras pessoas, mostre.\n\nPergunte:\n\n“Isso já está utilizável ou falta alguma coisa importante?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. parte escolhida;\n2. por que era necessária;\n3. resultado;\n4. feedback quando aplicável;\n5. próximo passo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não apenas aprendeu alguma coisa.\n\nUma parte real da sua conquista ficou pronta.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "NEGOCIO_14",
+      "context": {
+        "goal": "Quero criar um pequeno negócio",
+        "reason": "Quero vender algo que eu sei fazer.",
+        "age": 14,
+        "interests": [
+          "Desenho",
+          "Tecnologia"
+        ],
+        "parentGoals": [
+          "Empreendedorismo",
+          "Comunicação"
+        ],
+        "legacyGoalType": "project",
+        "v1GoalType": "PROJECT"
+      },
+      "legacyResult": {
+        "missionCount": 18,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o primeiro negócio",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no primeiro negócio.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o primeiro negócio e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M22",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "PROJECT_BUILD",
+          "experiencePattern": "MINIMUM_PROJECT_REAL_WORLD",
+          "goalType": "PROJECT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M22",
+        "title": "Construa uma versão pequena e coloque no mundo",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M22",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Tire seu projeto da cabeça\n\nVocê tem uma coisa que quer criar.\n\nAgora precisamos fazer ela existir.\n\nNão inteira.\n\nNão perfeita.\n\nSó uma versão pequena o suficiente para alguém conseguir ver, testar ou usar.\n\n---\n"
+          },
+          {
+            "heading": "1. Comece pelo resultado",
+            "type": "STEPS",
+            "content": "## 1. Comece pelo resultado\n\nComplete:\n\n“Quando esse projeto estiver funcionando, alguém vai conseguir ______.”\n\nEvite:\n\n“Meu objetivo é criar um aplicativo.”\n\nPrefira:\n\n“Meu objetivo é permitir que meus amigos organizem os jogos da semana sem ficar mandando 50 mensagens.”\n\nO segundo explica o que muda.\n\n---\n"
+          },
+          {
+            "heading": "2. Corte até ficar pequeno",
+            "type": "STEPS",
+            "content": "## 2. Corte até ficar pequeno\n\nImagine tudo que sua ideia poderia ter.\n\nAgora pergunte:\n\n“Qual é a menor versão que já permite testar a parte principal?”\n\nTalvez seu aplicativo vire inicialmente:\n\num formulário + planilha.\n\nTalvez sua marca vire:\n\numa única camiseta.\n\nTalvez seu canal vire:\n\num único vídeo.\n\nTalvez seu evento vire:\n\num encontro com cinco pessoas.\n\nIsso não diminui sua ideia.\n\nIsso permite começar.\n\n---\n"
+          },
+          {
+            "heading": "3. Defina o primeiro teste",
+            "type": "STEPS",
+            "content": "## 3. Defina o primeiro teste\n\nAntes de construir, decida:\n\nQuem vai testar?\n\nO que essa pessoa precisa conseguir fazer?\n\nComo vou saber se funcionou?\n\n---\n"
+          },
+          {
+            "heading": "4. Construa a versão 1",
+            "type": "STEPS",
+            "content": "## 4. Construa a versão 1\n\nAgora faça.\n\nDurante essa etapa, existe uma regra:\n\nnão adicione coisa nova só porque teve outra ideia.\n\nAnote para depois.\n\nPrimeiro termine.\n\n---\n\nCHECKPOINT KONKI\n\nAntes de continuar:\n\nExiste algo que outra pessoa já consegue ver, usar ou experimentar?\n\nSe não:\n\ncontinue construindo.\n\nSe sim:\n\nhora do mundo real.\n\n---\n"
+          },
+          {
+            "heading": "5. Coloque na frente da pessoa certa",
+            "type": "STEPS",
+            "content": "## 5. Coloque na frente da pessoa certa\n\nNão explique tudo antes.\n\nDiga o mínimo necessário.\n\nObserve:\n\n- onde ela entende;\n- onde trava;\n- o que tenta fazer;\n- o que ignora;\n- o que pergunta.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a mudança mais importante",
+            "type": "STEPS",
+            "content": "## 6. Escolha a mudança mais importante\n\nVocê provavelmente vai encontrar várias.\n\nNão faça todas.\n\nPergunte:\n\n“Qual mudança mais melhora a experiência principal?”\n\nFaça essa primeiro.\n\n---\n"
+          },
+          {
+            "heading": "7. Crie a versão 2",
+            "type": "STEPS",
+            "content": "## 7. Crie a versão 2\n\nAgora coloque novamente no mundo.\n\nCompare com a primeira.\n\n---\n"
+          },
+          {
+            "heading": "8. Decida o próximo passo",
+            "type": "STEPS",
+            "content": "## 8. Decida o próximo passo\n\nVocê tem três opções legítimas:\n\nCONTINUAR\nExiste evidência suficiente para desenvolver.\n\nMUDAR\nO problema existe, mas sua solução precisa mudar.\n\nPARAR\nO teste mostrou que não vale continuar agora.\n\nParar depois de aprender não é fracasso.\n\nÉ evitar gastar tempo numa direção ruim.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. problema ou resultado desejado;\n2. menor versão;\n3. primeiro teste;\n4. reação;\n5. mudança feita;\n6. versão 2;\n7. decisão: continuar, mudar ou parar;\n8. motivo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de transformar:\n\n“Eu tenho uma ideia.”\n\nem:\n\n“Eu construí, testei e aprendi alguma coisa.”\n\nEssa diferença é enorme.\n"
+          },
+          {
+            "heading": "Bloco D — Comunicação, ensinar e demonstrar",
+            "type": "STEPS",
+            "content": "## Bloco D — Comunicação, ensinar e demonstrar\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 44,
+          "trigger": "M22 nunca exige produto completo antes do primeiro teste.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "NEGOCIO_15",
+      "context": {
+        "goal": "Quero criar meu primeiro negócio",
+        "reason": "Quero testar uma ideia e ganhar meu próprio dinheiro.",
+        "age": 15,
+        "interests": [
+          "Culinária",
+          "Vídeos"
+        ],
+        "parentGoals": [
+          "Empreendedorismo",
+          "Iniciativa"
+        ],
+        "legacyGoalType": "project",
+        "v1GoalType": "PROJECT"
+      },
+      "legacyResult": {
+        "missionCount": 18,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o primeiro negócio",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no primeiro negócio.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o primeiro negócio e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M22",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "PROJECT_BUILD",
+          "experiencePattern": "MINIMUM_PROJECT_REAL_WORLD",
+          "goalType": "PROJECT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M22",
+        "title": "Construa uma versão pequena e coloque no mundo",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M22",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Tire seu projeto da cabeça\n\nVocê tem uma coisa que quer criar.\n\nAgora precisamos fazer ela existir.\n\nNão inteira.\n\nNão perfeita.\n\nSó uma versão pequena o suficiente para alguém conseguir ver, testar ou usar.\n\n---\n"
+          },
+          {
+            "heading": "1. Comece pelo resultado",
+            "type": "STEPS",
+            "content": "## 1. Comece pelo resultado\n\nComplete:\n\n“Quando esse projeto estiver funcionando, alguém vai conseguir ______.”\n\nEvite:\n\n“Meu objetivo é criar um aplicativo.”\n\nPrefira:\n\n“Meu objetivo é permitir que meus amigos organizem os jogos da semana sem ficar mandando 50 mensagens.”\n\nO segundo explica o que muda.\n\n---\n"
+          },
+          {
+            "heading": "2. Corte até ficar pequeno",
+            "type": "STEPS",
+            "content": "## 2. Corte até ficar pequeno\n\nImagine tudo que sua ideia poderia ter.\n\nAgora pergunte:\n\n“Qual é a menor versão que já permite testar a parte principal?”\n\nTalvez seu aplicativo vire inicialmente:\n\num formulário + planilha.\n\nTalvez sua marca vire:\n\numa única camiseta.\n\nTalvez seu canal vire:\n\num único vídeo.\n\nTalvez seu evento vire:\n\num encontro com cinco pessoas.\n\nIsso não diminui sua ideia.\n\nIsso permite começar.\n\n---\n"
+          },
+          {
+            "heading": "3. Defina o primeiro teste",
+            "type": "STEPS",
+            "content": "## 3. Defina o primeiro teste\n\nAntes de construir, decida:\n\nQuem vai testar?\n\nO que essa pessoa precisa conseguir fazer?\n\nComo vou saber se funcionou?\n\n---\n"
+          },
+          {
+            "heading": "4. Construa a versão 1",
+            "type": "STEPS",
+            "content": "## 4. Construa a versão 1\n\nAgora faça.\n\nDurante essa etapa, existe uma regra:\n\nnão adicione coisa nova só porque teve outra ideia.\n\nAnote para depois.\n\nPrimeiro termine.\n\n---\n\nCHECKPOINT KONKI\n\nAntes de continuar:\n\nExiste algo que outra pessoa já consegue ver, usar ou experimentar?\n\nSe não:\n\ncontinue construindo.\n\nSe sim:\n\nhora do mundo real.\n\n---\n"
+          },
+          {
+            "heading": "5. Coloque na frente da pessoa certa",
+            "type": "STEPS",
+            "content": "## 5. Coloque na frente da pessoa certa\n\nNão explique tudo antes.\n\nDiga o mínimo necessário.\n\nObserve:\n\n- onde ela entende;\n- onde trava;\n- o que tenta fazer;\n- o que ignora;\n- o que pergunta.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a mudança mais importante",
+            "type": "STEPS",
+            "content": "## 6. Escolha a mudança mais importante\n\nVocê provavelmente vai encontrar várias.\n\nNão faça todas.\n\nPergunte:\n\n“Qual mudança mais melhora a experiência principal?”\n\nFaça essa primeiro.\n\n---\n"
+          },
+          {
+            "heading": "7. Crie a versão 2",
+            "type": "STEPS",
+            "content": "## 7. Crie a versão 2\n\nAgora coloque novamente no mundo.\n\nCompare com a primeira.\n\n---\n"
+          },
+          {
+            "heading": "8. Decida o próximo passo",
+            "type": "STEPS",
+            "content": "## 8. Decida o próximo passo\n\nVocê tem três opções legítimas:\n\nCONTINUAR\nExiste evidência suficiente para desenvolver.\n\nMUDAR\nO problema existe, mas sua solução precisa mudar.\n\nPARAR\nO teste mostrou que não vale continuar agora.\n\nParar depois de aprender não é fracasso.\n\nÉ evitar gastar tempo numa direção ruim.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. problema ou resultado desejado;\n2. menor versão;\n3. primeiro teste;\n4. reação;\n5. mudança feita;\n6. versão 2;\n7. decisão: continuar, mudar ou parar;\n8. motivo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de transformar:\n\n“Eu tenho uma ideia.”\n\nem:\n\n“Eu construí, testei e aprendi alguma coisa.”\n\nEssa diferença é enorme.\n"
+          },
+          {
+            "heading": "Bloco D — Comunicação, ensinar e demonstrar",
+            "type": "STEPS",
+            "content": "## Bloco D — Comunicação, ensinar e demonstrar\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 44,
+          "trigger": "M22 nunca exige produto completo antes do primeiro teste.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "NEGOCIO_17",
+      "context": {
+        "goal": "Quero criar uma pequena empresa",
+        "reason": "Quero validar uma ideia com clientes reais.",
+        "age": 17,
+        "interests": [
+          "Tecnologia",
+          "Negócios"
+        ],
+        "parentGoals": [
+          "Pensamento crítico",
+          "Empreendedorismo"
+        ],
+        "legacyGoalType": "project",
+        "v1GoalType": "PROJECT"
+      },
+      "legacyResult": {
+        "missionCount": 22,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para o primeiro negócio",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no primeiro negócio.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre o primeiro negócio e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M22",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "PROJECT_BUILD",
+          "experiencePattern": "MINIMUM_PROJECT_REAL_WORLD",
+          "goalType": "PROJECT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M22",
+        "title": "Construa uma versão pequena e coloque no mundo",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M22",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Tire seu projeto da cabeça\n\nVocê tem uma coisa que quer criar.\n\nAgora precisamos fazer ela existir.\n\nNão inteira.\n\nNão perfeita.\n\nSó uma versão pequena o suficiente para alguém conseguir ver, testar ou usar.\n\n---\n"
+          },
+          {
+            "heading": "1. Comece pelo resultado",
+            "type": "STEPS",
+            "content": "## 1. Comece pelo resultado\n\nComplete:\n\n“Quando esse projeto estiver funcionando, alguém vai conseguir ______.”\n\nEvite:\n\n“Meu objetivo é criar um aplicativo.”\n\nPrefira:\n\n“Meu objetivo é permitir que meus amigos organizem os jogos da semana sem ficar mandando 50 mensagens.”\n\nO segundo explica o que muda.\n\n---\n"
+          },
+          {
+            "heading": "2. Corte até ficar pequeno",
+            "type": "STEPS",
+            "content": "## 2. Corte até ficar pequeno\n\nImagine tudo que sua ideia poderia ter.\n\nAgora pergunte:\n\n“Qual é a menor versão que já permite testar a parte principal?”\n\nTalvez seu aplicativo vire inicialmente:\n\num formulário + planilha.\n\nTalvez sua marca vire:\n\numa única camiseta.\n\nTalvez seu canal vire:\n\num único vídeo.\n\nTalvez seu evento vire:\n\num encontro com cinco pessoas.\n\nIsso não diminui sua ideia.\n\nIsso permite começar.\n\n---\n"
+          },
+          {
+            "heading": "3. Defina o primeiro teste",
+            "type": "STEPS",
+            "content": "## 3. Defina o primeiro teste\n\nAntes de construir, decida:\n\nQuem vai testar?\n\nO que essa pessoa precisa conseguir fazer?\n\nComo vou saber se funcionou?\n\n---\n"
+          },
+          {
+            "heading": "4. Construa a versão 1",
+            "type": "STEPS",
+            "content": "## 4. Construa a versão 1\n\nAgora faça.\n\nDurante essa etapa, existe uma regra:\n\nnão adicione coisa nova só porque teve outra ideia.\n\nAnote para depois.\n\nPrimeiro termine.\n\n---\n\nCHECKPOINT KONKI\n\nAntes de continuar:\n\nExiste algo que outra pessoa já consegue ver, usar ou experimentar?\n\nSe não:\n\ncontinue construindo.\n\nSe sim:\n\nhora do mundo real.\n\n---\n"
+          },
+          {
+            "heading": "5. Coloque na frente da pessoa certa",
+            "type": "STEPS",
+            "content": "## 5. Coloque na frente da pessoa certa\n\nNão explique tudo antes.\n\nDiga o mínimo necessário.\n\nObserve:\n\n- onde ela entende;\n- onde trava;\n- o que tenta fazer;\n- o que ignora;\n- o que pergunta.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a mudança mais importante",
+            "type": "STEPS",
+            "content": "## 6. Escolha a mudança mais importante\n\nVocê provavelmente vai encontrar várias.\n\nNão faça todas.\n\nPergunte:\n\n“Qual mudança mais melhora a experiência principal?”\n\nFaça essa primeiro.\n\n---\n"
+          },
+          {
+            "heading": "7. Crie a versão 2",
+            "type": "STEPS",
+            "content": "## 7. Crie a versão 2\n\nAgora coloque novamente no mundo.\n\nCompare com a primeira.\n\n---\n"
+          },
+          {
+            "heading": "8. Decida o próximo passo",
+            "type": "STEPS",
+            "content": "## 8. Decida o próximo passo\n\nVocê tem três opções legítimas:\n\nCONTINUAR\nExiste evidência suficiente para desenvolver.\n\nMUDAR\nO problema existe, mas sua solução precisa mudar.\n\nPARAR\nO teste mostrou que não vale continuar agora.\n\nParar depois de aprender não é fracasso.\n\nÉ evitar gastar tempo numa direção ruim.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. problema ou resultado desejado;\n2. menor versão;\n3. primeiro teste;\n4. reação;\n5. mudança feita;\n6. versão 2;\n7. decisão: continuar, mudar ou parar;\n8. motivo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de transformar:\n\n“Eu tenho uma ideia.”\n\nem:\n\n“Eu construí, testei e aprendi alguma coisa.”\n\nEssa diferença é enorme.\n"
+          },
+          {
+            "heading": "Bloco D — Comunicação, ensinar e demonstrar",
+            "type": "STEPS",
+            "content": "## Bloco D — Comunicação, ensinar e demonstrar\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 44,
+          "trigger": "M22 nunca exige produto completo antes do primeiro teste.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "GUITARRA_12",
+      "context": {
+        "goal": "Quero aprender guitarra",
+        "reason": "Quero tocar uma música de que gosto.",
+        "age": 12,
+        "interests": [
+          "Música"
+        ],
+        "parentGoals": [
+          "Disciplina",
+          "Autonomia"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "SKILL"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Deixe claro qual aprender guitarra você quer",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar nessa conquista.",
+          "steps": [
+            "Conte ao seu responsável o que você entendeu.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Faça uma escolha ou melhoria pequena.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Envie uma prova simples do seu esforço. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M29",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "EXPERIMENT_DEMONSTRATE",
+          "experiencePattern": "BEFORE_AFTER",
+          "goalType": "SKILL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M29",
+        "title": "Mostre seu antes e depois",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M29",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Faça seu antes e depois\n\nEscolha uma habilidade.\n\nAntes de treinar, faça uma tentativa e registre.\n\nDepois pratique.\n\nNo final, repita o mesmo teste.\n\nVamos descobrir se alguma coisa realmente mudou.\n\n---\n"
+          },
+          {
+            "heading": "1. Você precisa de um “antes”",
+            "type": "STEPS",
+            "content": "## 1. Você precisa de um “antes”\n\nÉ muito fácil dizer:\n\n“Acho que melhorei.”\n\nMas sem registrar o começo, fica difícil saber.\n\nExemplos:\n\nCorrida: tempo em uma distância segura.\n\nDesenho: desenhar o mesmo objeto.\n\nViolão: tocar o mesmo trecho.\n\nApresentação: explicar o mesmo assunto.\n\nEdição: editar um material parecido.\n\n---\n"
+          },
+          {
+            "heading": "2. Faça o teste inicial",
+            "type": "STEPS",
+            "content": "## 2. Faça o teste inicial\n\nNão treine antes só para deixar bonito.\n\nQueremos sua situação atual.\n\nRegistre.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha UMA coisa para melhorar",
+            "type": "STEPS",
+            "content": "## 3. Escolha UMA coisa para melhorar\n\nNão tente melhorar tudo.\n\nExemplo:\n\nNa apresentação:\n\nfalar mais devagar.\n\nNo desenho:\n\nproporção.\n\nNo violão:\n\ntroca entre dois acordes.\n\n---\n"
+          },
+          {
+            "heading": "4. Pratique",
+            "type": "STEPS",
+            "content": "## 4. Pratique\n\nFaça tentativas curtas.\n\nPreste atenção naquela coisa específica.\n\n---\n"
+          },
+          {
+            "heading": "5. Repita o teste",
+            "type": "STEPS",
+            "content": "## 5. Repita o teste\n\nTente manter condições parecidas.\n\nDepois compare.\n\n---\n"
+          },
+          {
+            "heading": "6. Procure evidência",
+            "type": "PROOF",
+            "content": "## 6. Procure evidência\n\nNão pergunte apenas:\n\n“Gostei mais?”\n\nPergunte:\n\nO que mudou que eu consigo apontar?\n\nTalvez tenha melhorado.\n\nTalvez quase nada tenha mudado.\n\nIsso também ensina.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n- habilidade;\n- registro antes;\n- foco do treino;\n- registro depois;\n- mudança observada.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê transformou “acho que estou melhor” em algo que consegue comparar.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 59,
+          "trigger": "M29 usa condições comparáveis sempre que possível.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "GUITARRA_14",
+      "context": {
+        "goal": "Quero aprender a tocar guitarra",
+        "reason": "Quero praticar sem depender de lembretes.",
+        "age": 14,
+        "interests": [
+          "Música",
+          "Vídeos"
+        ],
+        "parentGoals": [
+          "Disciplina",
+          "Organização"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "SKILL"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente essa conquista",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar nessa conquista.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M29",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "EXPERIMENT_DEMONSTRATE",
+          "experiencePattern": "BEFORE_AFTER",
+          "goalType": "SKILL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M29",
+        "title": "Mostre seu antes e depois",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M29",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Faça seu antes e depois\n\nEscolha uma habilidade.\n\nAntes de treinar, faça uma tentativa e registre.\n\nDepois pratique.\n\nNo final, repita o mesmo teste.\n\nVamos descobrir se alguma coisa realmente mudou.\n\n---\n"
+          },
+          {
+            "heading": "1. Você precisa de um “antes”",
+            "type": "STEPS",
+            "content": "## 1. Você precisa de um “antes”\n\nÉ muito fácil dizer:\n\n“Acho que melhorei.”\n\nMas sem registrar o começo, fica difícil saber.\n\nExemplos:\n\nCorrida: tempo em uma distância segura.\n\nDesenho: desenhar o mesmo objeto.\n\nViolão: tocar o mesmo trecho.\n\nApresentação: explicar o mesmo assunto.\n\nEdição: editar um material parecido.\n\n---\n"
+          },
+          {
+            "heading": "2. Faça o teste inicial",
+            "type": "STEPS",
+            "content": "## 2. Faça o teste inicial\n\nNão treine antes só para deixar bonito.\n\nQueremos sua situação atual.\n\nRegistre.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha UMA coisa para melhorar",
+            "type": "STEPS",
+            "content": "## 3. Escolha UMA coisa para melhorar\n\nNão tente melhorar tudo.\n\nExemplo:\n\nNa apresentação:\n\nfalar mais devagar.\n\nNo desenho:\n\nproporção.\n\nNo violão:\n\ntroca entre dois acordes.\n\n---\n"
+          },
+          {
+            "heading": "4. Pratique",
+            "type": "STEPS",
+            "content": "## 4. Pratique\n\nFaça tentativas curtas.\n\nPreste atenção naquela coisa específica.\n\n---\n"
+          },
+          {
+            "heading": "5. Repita o teste",
+            "type": "STEPS",
+            "content": "## 5. Repita o teste\n\nTente manter condições parecidas.\n\nDepois compare.\n\n---\n"
+          },
+          {
+            "heading": "6. Procure evidência",
+            "type": "PROOF",
+            "content": "## 6. Procure evidência\n\nNão pergunte apenas:\n\n“Gostei mais?”\n\nPergunte:\n\nO que mudou que eu consigo apontar?\n\nTalvez tenha melhorado.\n\nTalvez quase nada tenha mudado.\n\nIsso também ensina.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n- habilidade;\n- registro antes;\n- foco do treino;\n- registro depois;\n- mudança observada.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê transformou “acho que estou melhor” em algo que consegue comparar.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 59,
+          "trigger": "M29 usa condições comparáveis sempre que possível.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "GUITARRA_17",
+      "context": {
+        "goal": "Quero aprender guitarra e tocar para outras pessoas",
+        "reason": "Quero demonstrar uma habilidade real.",
+        "age": 17,
+        "interests": [
+          "Música",
+          "Eventos"
+        ],
+        "parentGoals": [
+          "Autonomia",
+          "Comunicação"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "SKILL"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para essa conquista",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar nessa conquista.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M29",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "EXPERIMENT_DEMONSTRATE",
+          "experiencePattern": "BEFORE_AFTER",
+          "goalType": "SKILL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M29",
+        "title": "Mostre seu antes e depois",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M29",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Faça seu antes e depois\n\nEscolha uma habilidade.\n\nAntes de treinar, faça uma tentativa e registre.\n\nDepois pratique.\n\nNo final, repita o mesmo teste.\n\nVamos descobrir se alguma coisa realmente mudou.\n\n---\n"
+          },
+          {
+            "heading": "1. Você precisa de um “antes”",
+            "type": "STEPS",
+            "content": "## 1. Você precisa de um “antes”\n\nÉ muito fácil dizer:\n\n“Acho que melhorei.”\n\nMas sem registrar o começo, fica difícil saber.\n\nExemplos:\n\nCorrida: tempo em uma distância segura.\n\nDesenho: desenhar o mesmo objeto.\n\nViolão: tocar o mesmo trecho.\n\nApresentação: explicar o mesmo assunto.\n\nEdição: editar um material parecido.\n\n---\n"
+          },
+          {
+            "heading": "2. Faça o teste inicial",
+            "type": "STEPS",
+            "content": "## 2. Faça o teste inicial\n\nNão treine antes só para deixar bonito.\n\nQueremos sua situação atual.\n\nRegistre.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha UMA coisa para melhorar",
+            "type": "STEPS",
+            "content": "## 3. Escolha UMA coisa para melhorar\n\nNão tente melhorar tudo.\n\nExemplo:\n\nNa apresentação:\n\nfalar mais devagar.\n\nNo desenho:\n\nproporção.\n\nNo violão:\n\ntroca entre dois acordes.\n\n---\n"
+          },
+          {
+            "heading": "4. Pratique",
+            "type": "STEPS",
+            "content": "## 4. Pratique\n\nFaça tentativas curtas.\n\nPreste atenção naquela coisa específica.\n\n---\n"
+          },
+          {
+            "heading": "5. Repita o teste",
+            "type": "STEPS",
+            "content": "## 5. Repita o teste\n\nTente manter condições parecidas.\n\nDepois compare.\n\n---\n"
+          },
+          {
+            "heading": "6. Procure evidência",
+            "type": "PROOF",
+            "content": "## 6. Procure evidência\n\nNão pergunte apenas:\n\n“Gostei mais?”\n\nPergunte:\n\nO que mudou que eu consigo apontar?\n\nTalvez tenha melhorado.\n\nTalvez quase nada tenha mudado.\n\nIsso também ensina.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n- habilidade;\n- registro antes;\n- foco do treino;\n- registro depois;\n- mudança observada.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê transformou “acho que estou melhor” em algo que consegue comparar.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 59,
+          "trigger": "M29 usa condições comparáveis sempre que possível.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "DINHEIRO_13",
+      "context": {
+        "goal": "Quero juntar dinheiro",
+        "reason": "Quero guardar para comprar algo importante.",
+        "age": 13,
+        "interests": [
+          "Esportes"
+        ],
+        "parentGoals": [
+          "Educação financeira",
+          "Disciplina"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "FINANCIAL_GOAL"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente essa conquista",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar nessa conquista.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M45",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "FINANCIAL_PATH_DIAGNOSIS",
+          "experiencePattern": "FINANCIAL_PATH_DISCOVERY",
+          "goalType": "FINANCIAL_GOAL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M45",
+        "title": "Descubra seu caminho até o dinheiro que você quer juntar",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M45",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra como esse dinheiro poderia se tornar possível\n\nVocê quer juntar dinheiro.\n\nAntes de criar uma meta impossível ou sair tentando qualquer coisa, vamos descobrir seu ponto de partida.\n\nVocê não precisa já ter dinheiro, renda ou mesada.\n\nZero também é uma resposta real.\n\nNo final, você terá um mapa dos caminhos que pode explorar com segurança.\n\n---\n"
+          },
+          {
+            "heading": "1. Dê forma à meta",
+            "type": "STEPS",
+            "content": "## 1. Dê forma à meta\n\nResponda com o que sabe hoje:\n\n- Quanto você quer juntar?\n- Para quê?\n- Em quanto tempo gostaria de chegar lá?\n\nSe ainda não souber o valor exato ou o tempo, registre uma faixa ou escreva “ainda não sei”.\n\nVocê está investigando. Não precisa inventar certeza.\n\n---\n"
+          },
+          {
+            "heading": "2. Entenda seu ponto de partida",
+            "type": "STEPS",
+            "content": "## 2. Entenda seu ponto de partida\n\nAgora registre se existe alguma entrada de dinheiro hoje.\n\nPode ser:\n\n- mesada;\n- presente ocasional;\n- pagamento por algo já autorizado;\n- outra entrada real;\n- nenhuma entrada.\n\nNão conte dinheiro que talvez apareça.\n\nUse somente o que realmente existe. Se a resposta for zero, escreva zero.\n\n---\n"
+          },
+          {
+            "heading": "3. Veja se existe algum gasto ajustável",
+            "type": "STEPS",
+            "content": "## 3. Veja se existe algum gasto ajustável\n\nPense apenas em gastos que já são seus e que você pode realmente decidir.\n\nTalvez exista algo pequeno que poderia reduzir.\n\nTalvez não exista nenhum gasto ajustável.\n\nAs duas respostas são válidas.\n\nNão corte necessidade básica e não assuma controle sobre dinheiro da família.\n\n---\n"
+          },
+          {
+            "heading": "4. Conheça as categorias de caminho",
+            "type": "STEPS",
+            "content": "## 4. Conheça as categorias de caminho\n\nExistem caminhos diferentes, mas nem todos estarão disponíveis agora.\n\n**Economizar:** guardar parte de uma entrada que já existe.\n\n**Ajustar:** reduzir um gasto realmente controlado pelo jovem.\n\n**Gerar valor:** explorar uma atividade segura e aprovada que poderia produzir resultado.\n\n**Contribuição não financeira:** assumir uma responsabilidade real que ajude uma conquista maior.\n\n**Rever valor ou horizonte:** ajustar a meta quando o cenário atual não fecha.\n\nNesta missão você não vai executar nenhum desses caminhos.\n\nVai descobrir quais merecem ser explorados depois.\n\n---\n"
+          },
+          {
+            "heading": "5. Marque o que depende do responsável",
+            "type": "STEPS",
+            "content": "## 5. Marque o que depende do responsável\n\nConversa ou aprovação do responsável é necessária quando o caminho envolve:\n\n- vender;\n- trabalhar ou prestar serviço;\n- usar dinheiro da família;\n- assumir responsabilidade familiar;\n- receber ou movimentar dinheiro;\n- falar com outras pessoas;\n- mudar um combinado.\n\nNão marque esses caminhos como disponíveis antes da conversa.\n\nMarque apenas: “precisa conversar com meu responsável”.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha o próximo caminho para explorar",
+            "type": "STEPS",
+            "content": "## 6. Escolha o próximo caminho para explorar\n\nEscolha uma categoria que faça sentido investigar depois.\n\nSua escolha pode ser:\n\n- calcular melhor o valor;\n- entender um horizonte possível;\n- observar entradas reais por um período;\n- identificar um gasto realmente ajustável;\n- conversar com o responsável sobre uma possibilidade;\n- concluir que ainda faltam informações.\n\nEscolher “ainda faltam informações” é melhor do que inventar um plano.\n\n---\n"
+          },
+          {
+            "heading": "Exemplo concreto",
+            "type": "STEPS",
+            "content": "## Exemplo concreto\n\nMeta: juntar R$1.000 para um objetivo importante.\n\nEntrada atual: R$0 por mês.\n\nGasto ajustável: nenhum identificado.\n\nCaminhos possíveis: conversar com o responsável sobre possibilidades seguras ou rever o horizonte.\n\nPróximo passo: preparar a conversa, sem presumir que alguma opção será aprovada.\n\n---\n"
+          },
+          {
+            "heading": "Se travar",
+            "type": "STEPS",
+            "content": "## Se travar\n\nComece por três respostas:\n\n1. Quanto eu quero ou qual faixa parece próxima?\n2. O que realmente entra hoje, mesmo que seja zero?\n3. Qual informação falta para escolher o próximo passo?\n\nVocê não precisa resolver a meta inteira nesta missão.\n\n---\n"
+          },
+          {
+            "heading": "Dica KONKI",
+            "type": "STEPS",
+            "content": "## Dica KONKI\n\nUm plano honesto que começa em zero é mais útil do que um plano bonito baseado em dinheiro que não existe.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. valor ou faixa desejada;\n2. finalidade;\n3. horizonte desejado ou “ainda não sei”;\n4. entrada atual, incluindo zero;\n5. gasto ajustável, incluindo nenhum;\n6. categorias de caminho consideradas;\n7. quais dependem do responsável;\n8. próximo caminho seguro a explorar.\n\nNão envie dados bancários, senha, número de cartão, documentos ou informações financeiras privadas.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não precisou fingir que já tinha dinheiro ou uma solução.\n\nVocê transformou “quero juntar” em um mapa real do seu ponto de partida e do próximo caminho que vale investigar.\n\nAgora uma próxima missão pode usar fatos, não suposições.\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "DINHEIRO_16",
+      "context": {
+        "goal": "Quero juntar 1000 reais",
+        "reason": "Quero criar um plano de renda e economia.",
+        "age": 16,
+        "interests": [
+          "Tecnologia",
+          "Negócios"
+        ],
+        "parentGoals": [
+          "Educação financeira",
+          "Empreendedorismo"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "FINANCIAL_GOAL"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para essa conquista",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar nessa conquista.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M45",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "FINANCIAL_PATH_DIAGNOSIS",
+          "experiencePattern": "FINANCIAL_PATH_DISCOVERY",
+          "goalType": "FINANCIAL_GOAL",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M45",
+        "title": "Descubra seu caminho até o dinheiro que você quer juntar",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M45",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra como esse dinheiro poderia se tornar possível\n\nVocê quer juntar dinheiro.\n\nAntes de criar uma meta impossível ou sair tentando qualquer coisa, vamos descobrir seu ponto de partida.\n\nVocê não precisa já ter dinheiro, renda ou mesada.\n\nZero também é uma resposta real.\n\nNo final, você terá um mapa dos caminhos que pode explorar com segurança.\n\n---\n"
+          },
+          {
+            "heading": "1. Dê forma à meta",
+            "type": "STEPS",
+            "content": "## 1. Dê forma à meta\n\nResponda com o que sabe hoje:\n\n- Quanto você quer juntar?\n- Para quê?\n- Em quanto tempo gostaria de chegar lá?\n\nSe ainda não souber o valor exato ou o tempo, registre uma faixa ou escreva “ainda não sei”.\n\nVocê está investigando. Não precisa inventar certeza.\n\n---\n"
+          },
+          {
+            "heading": "2. Entenda seu ponto de partida",
+            "type": "STEPS",
+            "content": "## 2. Entenda seu ponto de partida\n\nAgora registre se existe alguma entrada de dinheiro hoje.\n\nPode ser:\n\n- mesada;\n- presente ocasional;\n- pagamento por algo já autorizado;\n- outra entrada real;\n- nenhuma entrada.\n\nNão conte dinheiro que talvez apareça.\n\nUse somente o que realmente existe. Se a resposta for zero, escreva zero.\n\n---\n"
+          },
+          {
+            "heading": "3. Veja se existe algum gasto ajustável",
+            "type": "STEPS",
+            "content": "## 3. Veja se existe algum gasto ajustável\n\nPense apenas em gastos que já são seus e que você pode realmente decidir.\n\nTalvez exista algo pequeno que poderia reduzir.\n\nTalvez não exista nenhum gasto ajustável.\n\nAs duas respostas são válidas.\n\nNão corte necessidade básica e não assuma controle sobre dinheiro da família.\n\n---\n"
+          },
+          {
+            "heading": "4. Conheça as categorias de caminho",
+            "type": "STEPS",
+            "content": "## 4. Conheça as categorias de caminho\n\nExistem caminhos diferentes, mas nem todos estarão disponíveis agora.\n\n**Economizar:** guardar parte de uma entrada que já existe.\n\n**Ajustar:** reduzir um gasto realmente controlado pelo jovem.\n\n**Gerar valor:** explorar uma atividade segura e aprovada que poderia produzir resultado.\n\n**Contribuição não financeira:** assumir uma responsabilidade real que ajude uma conquista maior.\n\n**Rever valor ou horizonte:** ajustar a meta quando o cenário atual não fecha.\n\nNesta missão você não vai executar nenhum desses caminhos.\n\nVai descobrir quais merecem ser explorados depois.\n\n---\n"
+          },
+          {
+            "heading": "5. Marque o que depende do responsável",
+            "type": "STEPS",
+            "content": "## 5. Marque o que depende do responsável\n\nConversa ou aprovação do responsável é necessária quando o caminho envolve:\n\n- vender;\n- trabalhar ou prestar serviço;\n- usar dinheiro da família;\n- assumir responsabilidade familiar;\n- receber ou movimentar dinheiro;\n- falar com outras pessoas;\n- mudar um combinado.\n\nNão marque esses caminhos como disponíveis antes da conversa.\n\nMarque apenas: “precisa conversar com meu responsável”.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha o próximo caminho para explorar",
+            "type": "STEPS",
+            "content": "## 6. Escolha o próximo caminho para explorar\n\nEscolha uma categoria que faça sentido investigar depois.\n\nSua escolha pode ser:\n\n- calcular melhor o valor;\n- entender um horizonte possível;\n- observar entradas reais por um período;\n- identificar um gasto realmente ajustável;\n- conversar com o responsável sobre uma possibilidade;\n- concluir que ainda faltam informações.\n\nEscolher “ainda faltam informações” é melhor do que inventar um plano.\n\n---\n"
+          },
+          {
+            "heading": "Exemplo concreto",
+            "type": "STEPS",
+            "content": "## Exemplo concreto\n\nMeta: juntar R$1.000 para um objetivo importante.\n\nEntrada atual: R$0 por mês.\n\nGasto ajustável: nenhum identificado.\n\nCaminhos possíveis: conversar com o responsável sobre possibilidades seguras ou rever o horizonte.\n\nPróximo passo: preparar a conversa, sem presumir que alguma opção será aprovada.\n\n---\n"
+          },
+          {
+            "heading": "Se travar",
+            "type": "STEPS",
+            "content": "## Se travar\n\nComece por três respostas:\n\n1. Quanto eu quero ou qual faixa parece próxima?\n2. O que realmente entra hoje, mesmo que seja zero?\n3. Qual informação falta para escolher o próximo passo?\n\nVocê não precisa resolver a meta inteira nesta missão.\n\n---\n"
+          },
+          {
+            "heading": "Dica KONKI",
+            "type": "STEPS",
+            "content": "## Dica KONKI\n\nUm plano honesto que começa em zero é mais útil do que um plano bonito baseado em dinheiro que não existe.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. valor ou faixa desejada;\n2. finalidade;\n3. horizonte desejado ou “ainda não sei”;\n4. entrada atual, incluindo zero;\n5. gasto ajustável, incluindo nenhum;\n6. categorias de caminho consideradas;\n7. quais dependem do responsável;\n8. próximo caminho seguro a explorar.\n\nNão envie dados bancários, senha, número de cartão, documentos ou informações financeiras privadas.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê não precisou fingir que já tinha dinheiro ou uma solução.\n\nVocê transformou “quero juntar” em um mapa real do seu ponto de partida e do próximo caminho que vale investigar.\n\nAgora uma próxima missão pode usar fatos, não suposições.\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "CARREIRA_17",
+      "context": {
+        "goal": "Quero escolher uma carreira",
+        "reason": "Quero entender se engenharia combina comigo.",
+        "age": 17,
+        "interests": [
+          "Tecnologia",
+          "Ciência"
+        ],
+        "parentGoals": [
+          "Pensamento crítico",
+          "Tomada de decisão"
+        ],
+        "legacyGoalType": "other",
+        "v1GoalType": "CAREER_EDUCATION"
+      },
+      "legacyResult": {
+        "missionCount": 10,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para essa conquista",
+          "category": "CONQUEST",
+          "why": "Você vai avançar nessa conquista enquanto pratica tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre essa conquista e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M07",
+        "journeyRole": "BRIDGE",
+        "score": 66,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_PLAN",
+          "experiencePattern": "LIFE_COST_RESEARCH",
+          "goalType": "CAREER_EDUCATION",
+          "journeyRole": "BRIDGE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M07",
+        "title": "Descubra quanto custa a vida que você quer",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M07",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Quanto custa a vida que você imagina?\n\nVocê vai escolher uma versão da sua vida adulta e descobrir quanto ela custaria por mês.\n\nNão é para prever seu futuro.\n\nÉ para transformar uma ideia vaga em números.\n\n---\n"
+          },
+          {
+            "heading": "1. Imagine você com 25 anos",
+            "type": "STEPS",
+            "content": "## 1. Imagine você com 25 anos\n\nEscolha uma cidade.\n\nDepois imagine:\n\n- onde mora;\n- se mora sozinho ou divide;\n- como se locomove;\n- o que costuma comer;\n- o que faz no tempo livre;\n- quais gastos importantes teria.\n\nNão tente montar a “vida perfeita”.\n\nMonte uma vida que você realmente conseguiria imaginar.\n\n---\n"
+          },
+          {
+            "heading": "2. Pesquise os custos principais",
+            "type": "STEPS",
+            "content": "## 2. Pesquise os custos principais\n\nProcure valores aproximados de:\n\n- moradia;\n- alimentação;\n- transporte;\n- internet/celular;\n- lazer;\n- saúde;\n- roupas/cuidados;\n- imprevistos.\n\nUse fontes reais.\n\n---\n"
+          },
+          {
+            "heading": "3. Monte o custo mensal",
+            "type": "STEPS",
+            "content": "## 3. Monte o custo mensal\n\nSome tudo.\n\nDepois acrescente uma margem para imprevistos.\n\nExemplo:\n\nMoradia: R$2.000\nAlimentação: R$900\nTransporte: R$500\nLazer: R$600\nOutros: R$700\n\nTotal: R$4.700\n\nMas isso ainda não significa que um salário de R$4.700 resolve.\n\nExistem impostos, reserva, emergências e outros custos.\n\n---\n"
+          },
+          {
+            "heading": "4. Descubra quanto você precisaria ganhar",
+            "type": "STEPS",
+            "content": "## 4. Descubra quanto você precisaria ganhar\n\nCrie uma faixa aproximada de renda que permitiria bancar essa vida com alguma segurança.\n\nNão precisa acertar com precisão.\n\nA missão é perceber ordem de grandeza.\n\n---\n"
+          },
+          {
+            "heading": "5. Compare com caminhos profissionais",
+            "type": "STEPS",
+            "content": "## 5. Compare com caminhos profissionais\n\nAgora escolha duas profissões ou caminhos que você considera interessantes.\n\nPesquise:\n\n- renda inicial;\n- renda depois de experiência;\n- tempo de preparação;\n- tipo de rotina;\n- riscos.\n\nNão escolha carreira só pelo salário.\n\nMas também não finja que salário não importa.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nEnvie:\n\n1. cidade escolhida;\n2. custo mensal estimado;\n3. faixa de renda necessária;\n4. dois caminhos profissionais comparados;\n5. uma coisa que te surpreendeu.\n\n---\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\n### Você transformou “quero ter uma vida boa” em uma pergunta concreta.\n\nQuanto custa?\n\nQuanto preciso ganhar?\n\nQue escolhas me aproximam disso?\n\nEsse tipo de pergunta muda a forma de pensar no futuro.\n\n---\n"
+          },
+          {
+            "heading": "Bloco B — Negociação e decisão",
+            "type": "STEPS",
+            "content": "## Bloco B — Negociação e decisão\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "EVENTO_14",
+      "context": {
+        "goal": "Quero organizar um evento pequeno",
+        "reason": "Quero reunir meus amigos para mostrar nossos projetos.",
+        "age": 14,
+        "interests": [
+          "Eventos",
+          "Criação"
+        ],
+        "parentGoals": [
+          "Organização",
+          "Comunicação"
+        ],
+        "legacyGoalType": "project",
+        "v1GoalType": "PROJECT"
+      },
+      "legacyResult": {
+        "missionCount": 18,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina exatamente o evento que você quer realizar",
+          "category": "CONQUEST",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no evento que você quer realizar.",
+          "steps": [
+            "Defina o resultado desta missão.",
+            "Investigue informações reais sobre o evento que você quer realizar e compare o que encontrou.",
+            "Compare duas ou três possibilidades e justifique seu caminho.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Mostre também o raciocínio por trás da sua escolha. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M22",
+        "journeyRole": "CORE",
+        "score": 85,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "PROJECT_BUILD",
+          "experiencePattern": "MINIMUM_PROJECT_REAL_WORLD",
+          "goalType": "PROJECT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M22",
+        "title": "Construa uma versão pequena e coloque no mundo",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M22",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Tire seu projeto da cabeça\n\nVocê tem uma coisa que quer criar.\n\nAgora precisamos fazer ela existir.\n\nNão inteira.\n\nNão perfeita.\n\nSó uma versão pequena o suficiente para alguém conseguir ver, testar ou usar.\n\n---\n"
+          },
+          {
+            "heading": "1. Comece pelo resultado",
+            "type": "STEPS",
+            "content": "## 1. Comece pelo resultado\n\nComplete:\n\n“Quando esse projeto estiver funcionando, alguém vai conseguir ______.”\n\nEvite:\n\n“Meu objetivo é criar um aplicativo.”\n\nPrefira:\n\n“Meu objetivo é permitir que meus amigos organizem os jogos da semana sem ficar mandando 50 mensagens.”\n\nO segundo explica o que muda.\n\n---\n"
+          },
+          {
+            "heading": "2. Corte até ficar pequeno",
+            "type": "STEPS",
+            "content": "## 2. Corte até ficar pequeno\n\nImagine tudo que sua ideia poderia ter.\n\nAgora pergunte:\n\n“Qual é a menor versão que já permite testar a parte principal?”\n\nTalvez seu aplicativo vire inicialmente:\n\num formulário + planilha.\n\nTalvez sua marca vire:\n\numa única camiseta.\n\nTalvez seu canal vire:\n\num único vídeo.\n\nTalvez seu evento vire:\n\num encontro com cinco pessoas.\n\nIsso não diminui sua ideia.\n\nIsso permite começar.\n\n---\n"
+          },
+          {
+            "heading": "3. Defina o primeiro teste",
+            "type": "STEPS",
+            "content": "## 3. Defina o primeiro teste\n\nAntes de construir, decida:\n\nQuem vai testar?\n\nO que essa pessoa precisa conseguir fazer?\n\nComo vou saber se funcionou?\n\n---\n"
+          },
+          {
+            "heading": "4. Construa a versão 1",
+            "type": "STEPS",
+            "content": "## 4. Construa a versão 1\n\nAgora faça.\n\nDurante essa etapa, existe uma regra:\n\nnão adicione coisa nova só porque teve outra ideia.\n\nAnote para depois.\n\nPrimeiro termine.\n\n---\n\nCHECKPOINT KONKI\n\nAntes de continuar:\n\nExiste algo que outra pessoa já consegue ver, usar ou experimentar?\n\nSe não:\n\ncontinue construindo.\n\nSe sim:\n\nhora do mundo real.\n\n---\n"
+          },
+          {
+            "heading": "5. Coloque na frente da pessoa certa",
+            "type": "STEPS",
+            "content": "## 5. Coloque na frente da pessoa certa\n\nNão explique tudo antes.\n\nDiga o mínimo necessário.\n\nObserve:\n\n- onde ela entende;\n- onde trava;\n- o que tenta fazer;\n- o que ignora;\n- o que pergunta.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a mudança mais importante",
+            "type": "STEPS",
+            "content": "## 6. Escolha a mudança mais importante\n\nVocê provavelmente vai encontrar várias.\n\nNão faça todas.\n\nPergunte:\n\n“Qual mudança mais melhora a experiência principal?”\n\nFaça essa primeiro.\n\n---\n"
+          },
+          {
+            "heading": "7. Crie a versão 2",
+            "type": "STEPS",
+            "content": "## 7. Crie a versão 2\n\nAgora coloque novamente no mundo.\n\nCompare com a primeira.\n\n---\n"
+          },
+          {
+            "heading": "8. Decida o próximo passo",
+            "type": "STEPS",
+            "content": "## 8. Decida o próximo passo\n\nVocê tem três opções legítimas:\n\nCONTINUAR\nExiste evidência suficiente para desenvolver.\n\nMUDAR\nO problema existe, mas sua solução precisa mudar.\n\nPARAR\nO teste mostrou que não vale continuar agora.\n\nParar depois de aprender não é fracasso.\n\nÉ evitar gastar tempo numa direção ruim.\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. problema ou resultado desejado;\n2. menor versão;\n3. primeiro teste;\n4. reação;\n5. mudança feita;\n6. versão 2;\n7. decisão: continuar, mudar ou parar;\n8. motivo.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de transformar:\n\n“Eu tenho uma ideia.”\n\nem:\n\n“Eu construí, testei e aprendi alguma coisa.”\n\nEssa diferença é enorme.\n"
+          },
+          {
+            "heading": "Bloco D — Comunicação, ensinar e demonstrar",
+            "type": "STEPS",
+            "content": "## Bloco D — Comunicação, ensinar e demonstrar\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 44,
+          "trigger": "M22 nunca exige produto completo antes do primeiro teste.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "CASACO_12",
+      "context": {
+        "goal": "Quero comprar um casaco",
+        "reason": "Preciso de um casaco quente para o inverno.",
+        "age": 12,
+        "interests": [
+          "Moda"
+        ],
+        "parentGoals": [
+          "Educação financeira",
+          "Responsabilidade"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 8,
+        "firstMission": {
+          "missionId": "DC02",
+          "title": "Pratique esta habilidade: defenda sua decisão",
+          "category": "DEVELOPMENT_CONTEXTUALIZED",
+          "why": "Você vai produzir uma decisão, conversa ou resultado real que ajuda a avançar no casaco que você quer.",
+          "steps": [
+            "Conte ao seu responsável o que você entendeu.",
+            "Investigue informações reais sobre o casaco que você quer e compare o que encontrou.",
+            "Faça uma escolha ou melhoria pequena.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Envie uma prova simples do seu esforço. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 92.5,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    },
+    {
+      "id": "NOTEBOOK_16",
+      "context": {
+        "goal": "Quero comprar um notebook",
+        "reason": "Preciso estudar, editar vídeos e comparar o custo total.",
+        "age": 16,
+        "interests": [
+          "Tecnologia",
+          "Vídeos"
+        ],
+        "parentGoals": [
+          "Tomada de decisão",
+          "Educação financeira"
+        ],
+        "legacyGoalType": "physical_product",
+        "v1GoalType": "PHYSICAL_PRODUCT"
+      },
+      "legacyResult": {
+        "missionCount": 14,
+        "firstMission": {
+          "missionId": "CQ02",
+          "title": "Defina requisitos, limites e prioridades para o equipamento que você quer",
+          "category": "CONQUEST",
+          "why": "Você vai avançar no equipamento que você quer enquanto pratica tomada de decisão, competências escolhidas pela sua família.",
+          "steps": [
+            "Defina o resultado e os limites reais.",
+            "Investigue informações reais sobre o equipamento que você quer e compare o que encontrou.",
+            "Analise benefícios, custos, riscos e o que você abre mão.",
+            "Teste uma alternativa ou cenário diferente.",
+            "Envie as fontes, a comparação e sua conclusão."
+          ],
+          "evidence": "Apresente uma defesa completa, com limites e riscos. Envie as fontes, a comparação e sua conclusão."
+        }
+      },
+      "v1Result": {
+        "missionId": "M38",
+        "journeyRole": "CORE",
+        "score": 100,
+        "compositionResultCode": "MISSION_SELECTED",
+        "semantic": {
+          "mechanic": "INVESTIGATE_COMPARE_PRODUCT",
+          "experiencePattern": "GOAL_VERSION_COMPARE",
+          "goalType": "PHYSICAL_PRODUCT",
+          "journeyRole": "CORE"
+        }
+      },
+      "v1ResultCode": "MISSION_SELECTED",
+      "materializedMission": {
+        "status": "MISSION_SELECTED",
+        "missionId": "M38",
+        "title": "Descubra qual versão realmente vale a pena para você",
+        "contentVersion": "1.0.0",
+        "completionRuleId": "CR_M38",
+        "sections": [
+          {
+            "heading": "Tela inicial",
+            "type": "CHALLENGE",
+            "content": "### Tela inicial\n\n#### Descubra qual versão vale seu dinheiro\n\nVocê quer uma coisa específica.\n\nMas antes de conquistar, precisa descobrir:\n\nqual versão realmente faz sentido para você?\n\nA mais cara nem sempre é a melhor.\n\n---\n"
+          },
+          {
+            "heading": "1. Pare de comparar só preço",
+            "type": "STEPS",
+            "content": "## 1. Pare de comparar só preço\n\nImagine três notebooks:\n\nA: R$3.500\nB: R$4.500\nC: R$6.000\n\nSe você olhar apenas preço, A ganha.\n\nMas e se A não rodar o programa que você precisa?\n\nEntão ela pode ser a opção mais barata e, ao mesmo tempo, a pior compra.\n\n---\n"
+          },
+          {
+            "heading": "2. Pergunte para que você realmente vai usar",
+            "type": "STEPS",
+            "content": "## 2. Pergunte para que você realmente vai usar\n\nComplete:\n\n“Eu quero isso principalmente para ______.”\n\nExemplo:\n\nNotebook:\n\n- estudar;\n- editar vídeos;\n- jogar;\n- programar.\n\nTênis:\n\n- correr;\n- jogar bola;\n- usar no dia a dia;\n- estilo.\n\nIsso muda a comparação.\n\n---\n"
+          },
+          {
+            "heading": "3. Escolha três critérios que importam",
+            "type": "STEPS",
+            "content": "## 3. Escolha três critérios que importam\n\nExemplos:\n\n- preço;\n- duração;\n- qualidade;\n- conforto;\n- desempenho;\n- tamanho;\n- manutenção;\n- recursos;\n- garantia.\n\nEscolha só três ou quatro.\n\n---\n"
+          },
+          {
+            "heading": "4. Encontre opções reais",
+            "type": "STEPS",
+            "content": "## 4. Encontre opções reais\n\nPesquise pelo menos três.\n\nRegistre:\n\nOpção A\nOpção B\nOpção C\n\nNão precisa escolher marcas diferentes se as versões forem diferentes.\n\n---\n"
+          },
+          {
+            "heading": "5. Elimine uma",
+            "type": "STEPS",
+            "content": "## 5. Elimine uma\n\nAgora faça algo importante:\n\nelimine uma opção.\n\nNão apenas escolha sua favorita.\n\nDiga:\n\n“Essa eu não escolheria porque…”\n\nEliminar ajuda a descobrir o que realmente importa.\n\n---\n"
+          },
+          {
+            "heading": "6. Escolha a melhor para você",
+            "type": "STEPS",
+            "content": "## 6. Escolha a melhor para você\n\nNão pergunte:\n\n“Qual é a melhor?”\n\nPergunte:\n\n“Qual é a melhor para o que eu realmente quero fazer?”\n\n---\n"
+          },
+          {
+            "heading": "Para terminar",
+            "type": "PROOF",
+            "content": "## Para terminar\n\nMostre:\n\n1. três opções;\n2. critérios;\n3. opção eliminada;\n4. motivo;\n5. escolha atual;\n6. valor.\n"
+          },
+          {
+            "heading": "Missão concluída",
+            "type": "POST_LEARNING",
+            "content": "## Missão concluída\n\nVocê acabou de separar duas perguntas diferentes:\n\n“Qual é o melhor produto?”\n\ne\n\n“Qual é o melhor produto para mim?”\n\nEssa segunda pergunta costuma economizar bastante dinheiro.\n\n---\n"
+          }
+        ]
+      },
+      "blockedCandidates": [],
+      "manualReviewFlags": [
+        {
+          "ruleId": 39,
+          "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+          "reviewOwner": "PARENT",
+          "enforcement": "HARD_GATE",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 69,
+          "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 92,
+          "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "SOFT_QA",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        },
+        {
+          "ruleId": 111,
+          "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+          "reviewOwner": "PRODUCT_TEAM",
+          "enforcement": "POST_HOC_REVIEW",
+          "evidenceAvailable": [
+            "normalized_context",
+            "eligibility_reasons",
+            "selected_mission_contract",
+            "canonical_content_version",
+            "sequence_signature"
+          ]
+        }
+      ],
+      "missingFields": [
+        "family.approvedPeopleRelations",
+        "family.moneyRules",
+        "family.permissions",
+        "runtimeState",
+        "youth.autonomyLevel"
+      ],
+      "automaticComparison": {
+        "result": "REQUIRES_HUMAN_REVIEW",
+        "reasons": [
+          "At least one controlled manual-review rule was triggered"
+        ]
+      },
+      "review": {
+        "humanVerdict": "",
+        "humanNotes": ""
+      }
+    }
+  ]
+}

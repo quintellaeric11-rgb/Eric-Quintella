@@ -1,0 +1,27 @@
+const row=(id,goal,reason,age,parentGoals,interests)=>({id,goal,reason,age,parentGoals,interests});
+export const SHADOW_REVIEW_CASES=Object.freeze([
+row('PS5_12','Quero comprar um PS5','Quero jogar com meus amigos e cuidar do que é meu.',12,['Educação financeira','Responsabilidade'],['Games','Tecnologia']),
+row('PS5_14','Quero comprar um PS5','Quero aprender a planejar e escolher bem.',14,['Tomada de decisão','Educação financeira'],['Games','Vídeos']),
+row('PS5_17','Quero comprar um PS5','Quero avaliar se vale o custo e contribuir para a compra.',17,['Pensamento crítico','Autonomia'],['Tecnologia','Empreendedorismo']),
+row('TENIS_13','Quero comprar um tênis','Estou precisando para usar todos os dias.',13,['Responsabilidade','Educação financeira'],['Esportes','Moda']),
+row('TENIS_15','Quero comprar um tênis para treinar','Quero comparar conforto, preço e durabilidade.',15,['Tomada de decisão','Autonomia'],['Corrida','Esportes']),
+row('TENIS_16','Quero comprar um tênis novo','Quero pagar uma parte e fazer uma escolha consciente.',16,['Educação financeira','Iniciativa'],['Moda','Empreendedorismo']),
+row('ITALIA_12','Quero viajar para a Itália','Quero conhecer Roma com minha família.',12,['Organização','Comunicação'],['Viagens','História']),
+row('ITALIA_14','Quero fazer uma viagem para a Itália','Quero conhecer outra cultura e ajudar no planejamento.',14,['Autonomia','Organização'],['Viagens','Culinária']),
+row('ITALIA_17','Quero viajar para a Itália','Quero montar um plano realista de custos e roteiro.',17,['Pensamento crítico','Educação financeira'],['Viagens','Fotografia']),
+row('SHOW_13','Quero ir a um show','É a banda que eu mais gosto.',13,['Responsabilidade','Comunicação'],['Música']),
+row('SHOW_15','Quero ir a um festival','Quero organizar transporte, ingresso e segurança.',15,['Organização','Autonomia'],['Música','Eventos']),
+row('SHOW_17','Quero ir a um show em outra cidade','Quero decidir se o custo e a logística fazem sentido.',17,['Tomada de decisão','Pensamento crítico'],['Música','Viagens']),
+row('NEGOCIO_14','Quero criar um pequeno negócio','Quero vender algo que eu sei fazer.',14,['Empreendedorismo','Comunicação'],['Desenho','Tecnologia']),
+row('NEGOCIO_15','Quero criar meu primeiro negócio','Quero testar uma ideia e ganhar meu próprio dinheiro.',15,['Empreendedorismo','Iniciativa'],['Culinária','Vídeos']),
+row('NEGOCIO_17','Quero criar uma pequena empresa','Quero validar uma ideia com clientes reais.',17,['Pensamento crítico','Empreendedorismo'],['Tecnologia','Negócios']),
+row('GUITARRA_12','Quero aprender guitarra','Quero tocar uma música de que gosto.',12,['Disciplina','Autonomia'],['Música']),
+row('GUITARRA_14','Quero aprender a tocar guitarra','Quero praticar sem depender de lembretes.',14,['Disciplina','Organização'],['Música','Vídeos']),
+row('GUITARRA_17','Quero aprender guitarra e tocar para outras pessoas','Quero demonstrar uma habilidade real.',17,['Autonomia','Comunicação'],['Música','Eventos']),
+row('DINHEIRO_13','Quero juntar dinheiro','Quero guardar para comprar algo importante.',13,['Educação financeira','Disciplina'],['Esportes']),
+row('DINHEIRO_16','Quero juntar 1000 reais','Quero criar um plano de renda e economia.',16,['Educação financeira','Empreendedorismo'],['Tecnologia','Negócios']),
+row('CARREIRA_17','Quero escolher uma carreira','Quero entender se engenharia combina comigo.',17,['Pensamento crítico','Tomada de decisão'],['Tecnologia','Ciência']),
+row('EVENTO_14','Quero organizar um evento pequeno','Quero reunir meus amigos para mostrar nossos projetos.',14,['Organização','Comunicação'],['Eventos','Criação']),
+row('CASACO_12','Quero comprar um casaco','Preciso de um casaco quente para o inverno.',12,['Educação financeira','Responsabilidade'],['Moda']),
+row('NOTEBOOK_16','Quero comprar um notebook','Preciso estudar, editar vídeos e comparar o custo total.',16,['Tomada de decisão','Educação financeira'],['Tecnologia','Vídeos'])
+]);

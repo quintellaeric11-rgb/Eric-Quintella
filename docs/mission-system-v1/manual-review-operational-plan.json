@@ -1,0 +1,488 @@
+{
+  "generatedAt": "2026-09-01T01:35:04.527Z",
+  "total": 26,
+  "controlledValues": {
+    "reviewOwner": [
+      "PRODUCT_TEAM",
+      "PARENT",
+      "YOUTH",
+      "PILOT_RESEARCHER"
+    ],
+    "enforcement": [
+      "HARD_GATE",
+      "SOFT_QA",
+      "POST_HOC_REVIEW",
+      "USER_TEST_ONLY"
+    ]
+  },
+  "rules": [
+    {
+      "rule": 8,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M03 permanece DISCOVERY mesmo quando a entrevista é muito relevante.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 10,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M01 pode ser concluída com uma tentativa real que recebeu “não”.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 14,
+      "stage": "PRE_MATERIALIZATION",
+      "trigger": "Duas missões de interação muito parecidas não são colocadas em sequência quando existe alternativa coerente.",
+      "reviewOwner": "PARENT",
+      "enforcement": "HARD_GATE",
+      "doesItBlockMission": true,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": false,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 17,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M11 pode terminar com o jovem ainda querendo comprar.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 20,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M13 só aparece quando existe trade-off real e relevante.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 23,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M14 não considera “gostei” como validação suficiente.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 28,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M17 exige uso/teste real quando isso for possível.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 36,
+      "stage": "POST_JOURNEY",
+      "trigger": "M11–M15 não podem formar uma sequência longa de “pensar sobre decisões” sem ação real entre elas.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "POST_HOC_REVIEW",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 37,
+      "stage": "POST_JOURNEY",
+      "trigger": "M16–M20 não podem formar uma sequência longa de projetos HEAVY.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "POST_HOC_REVIEW",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 39,
+      "stage": "PRE_MATERIALIZATION",
+      "trigger": "Interesse do jovem pode alterar contexto e exemplo, mas não transformar missão inelegível em elegível.",
+      "reviewOwner": "PARENT",
+      "enforcement": "HARD_GATE",
+      "doesItBlockMission": true,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": false,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 44,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M22 nunca exige produto completo antes do primeiro teste.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 48,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M24 só aparece quando existe pergunta real e pessoa adequada.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 49,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M24 não deve substituir pesquisa factual simples.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 54,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M27 exige necessidade real.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 59,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M29 usa condições comparáveis sempre que possível.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 66,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M27 e M28 não repetem a mesma experiência apenas trocando o verbo “ajudar” por “ensinar”.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 69,
+      "stage": "EDITORIAL_QA",
+      "trigger": "Interesse do jovem pode mudar domínio/exemplo, mas não critério de conclusão.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 72,
+      "stage": "POST_JOURNEY",
+      "trigger": "Durante o teste da M31, o jovem não pode completar as lacunas verbalmente.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "POST_HOC_REVIEW",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 74,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M32 registra lembretes recebidos, não apenas dias marcados.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 76,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M33 exige responsabilidade com consequência real.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 78,
+      "stage": "EDITORIAL_QA",
+      "trigger": "Pedir ajuda na M33 não significa automaticamente falhar.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 80,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M34 não premia agenda lotada.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 82,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M35 não promete domínio de habilidade em sete dias.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 92,
+      "stage": "EDITORIAL_QA",
+      "trigger": "Quando M38 é específica o suficiente, ela deve vencer M12 genérica.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 101,
+      "stage": "EDITORIAL_QA",
+      "trigger": "M41 não repete M32 com outro objeto sem mudança pedagógica real.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "SOFT_QA",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    },
+    {
+      "rule": 111,
+      "stage": "POST_JOURNEY",
+      "trigger": "Se M38, M39 e M42 não acrescentarem perguntas diferentes, eliminar as etapas redundantes.",
+      "reviewOwner": "PRODUCT_TEAM",
+      "enforcement": "POST_HOC_REVIEW",
+      "doesItBlockMission": false,
+      "doesItBlockJourney": false,
+      "canPilotProceedWithoutReview": true,
+      "whatEvidenceReviewerReceives": [
+        "normalized_context",
+        "eligibility_reasons",
+        "selected_mission_contract",
+        "canonical_content_version",
+        "relevant_user_input"
+      ],
+      "notes": "Possui proteção parcial; nuance editorial requer revisão humana."
+    }
+  ]
+}

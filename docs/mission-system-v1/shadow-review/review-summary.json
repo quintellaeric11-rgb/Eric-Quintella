@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-09-01T02:26:38.278Z",
+  "caseCount": 24,
+  "verdictCounts": {
+    "V1_BETTER": 0,
+    "LEGACY_BETTER": 0,
+    "TIE": 0,
+    "BOTH_BAD": 0,
+    "UNREVIEWED": 24
+  },
+  "frequentPatterns": {
+    "v1ResultCodes": [
+      {
+        "value": "MISSION_SELECTED",
+        "count": 24
+      }
+    ],
+    "legacyFirstMissions": [
+      {
+        "value": "CQ02",
+        "count": 17
+      },
+      {
+        "value": "DC01",
+        "count": 3
+      },
+      {
+        "value": "DC05",
+        "count": 2
+      },
+      {
+        "value": "CQ10",
+        "count": 1
+      },
+      {
+        "value": "DC02",
+        "count": 1
+      }
+    ],
+    "v1Missions": [
+      {
+        "value": "M38",
+        "count": 8
+      },
+      {
+        "value": "M43",
+        "count": 6
+      },
+      {
+        "value": "M22",
+        "count": 4
+      },
+      {
+        "value": "M29",
+        "count": 3
+      },
+      {
+        "value": "M45",
+        "count": 2
+      },
+      {
+        "value": "M07",
+        "count": 1
+      }
+    ],
+    "missingFields": [
+      {
+        "value": "family.approvedPeopleRelations",
+        "count": 24
+      },
+      {
+        "value": "family.moneyRules",
+        "count": 24
+      },
+      {
+        "value": "family.permissions",
+        "count": 24
+      },
+      {
+        "value": "runtimeState",
+        "count": 24
+      },
+      {
+        "value": "youth.autonomyLevel",
+        "count": 24
+      }
+    ],
+    "blockedReasons": [],
+    "manualReviewRules": [
+      {
+        "value": "39",
+        "count": 24
+      },
+      {
+        "value": "69",
+        "count": 24
+      },
+      {
+        "value": "92",
+        "count": 8
+      },
+      {
+        "value": "111",
+        "count": 8
+      },
+      {
+        "value": "44",
+        "count": 4
+      },
+      {
+        "value": "59",
+        "count": 3
+      }
+    ]
+  }
+}
