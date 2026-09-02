@@ -26,6 +26,9 @@
     "test:invite-links": "node scripts/test-invite-links.mjs",
     "test:core-regressions": "node scripts/test-core-regressions.mjs",
     "test:p0-lifecycle": "node scripts/test-core-regressions.mjs",
+    "test:concierge": "node scripts/test-concierge-mvp.mjs",
+    "test:concierge-db": "node scripts/test-concierge-db-rollback.mjs",
+    "test:concierge-e2e": "node scripts/test-concierge-e2e.mjs",
     "admin:promote": "node scripts/promote-admin.mjs"
   },
   "dependencies": {

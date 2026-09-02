@@ -23,10 +23,11 @@ assert.equal(parseBrazilianBirthDate('31 / 02 / 2012',new Date(2026,7,30)),null)
 assert.equal(parseBrazilianBirthDate('01 / 01 / 2030',new Date(2026,7,30)),null);
 assert.equal(friendlyError({message:'active_conquest_exists'}),'Você já está correndo atrás de uma conquista.');
 const assignment='11111111-1111-4111-8111-111111111111',contract='22222222-2222-4222-8222-222222222222';
-assert.deepEqual(parseAppRoute(`/?view=mission&assignment=${assignment}`),{view:'mission',assignmentId:assignment,contractId:undefined,journeyId:undefined});
-assert.deepEqual(parseAppRoute('/?view=review&assignment=invalid'),{view:'review',assignmentId:undefined,contractId:undefined,journeyId:undefined});
-assert.deepEqual(parseAppRoute('/?view=unknown'),{view:'home',assignmentId:undefined,contractId:undefined,journeyId:undefined});
+assert.deepEqual(parseAppRoute(`/?view=mission&assignment=${assignment}`),{view:'mission',assignmentId:assignment,contractId:undefined,journeyId:undefined,conquestId:undefined});
+assert.deepEqual(parseAppRoute('/?view=review&assignment=invalid'),{view:'review',assignmentId:undefined,contractId:undefined,journeyId:undefined,conquestId:undefined});
+assert.deepEqual(parseAppRoute('/?view=unknown'),{view:'home',assignmentId:undefined,contractId:undefined,journeyId:undefined,conquestId:undefined});
 assert.equal(appRouteUrl({view:'contract',contractId:contract}),`/?view=contract&contract=${contract}`);
-assert.deepEqual(notificationRoute({type:'MISSION_SUBMITTED',deep_link:'/?view=review',related_entity_id:assignment}),{view:'review',assignmentId:assignment,contractId:undefined,journeyId:undefined});
-assert.deepEqual(notificationRoute({type:'JOURNEY_REVIEW',deep_link:'/?view=journey-review',related_entity_id:assignment}),{view:'journey-review',assignmentId:undefined,contractId:undefined,journeyId:assignment});
+assert.deepEqual(notificationRoute({type:'MISSION_SUBMITTED',deep_link:'/?view=review',related_entity_id:assignment}),{view:'review',assignmentId:assignment,contractId:undefined,journeyId:undefined,conquestId:undefined});
+assert.deepEqual(notificationRoute({type:'JOURNEY_REVIEW',deep_link:'/?view=journey-review',related_entity_id:assignment}),{view:'journey-review',assignmentId:undefined,contractId:undefined,journeyId:assignment,conquestId:undefined});
+assert.deepEqual(parseAppRoute(`/?view=admin&conquest=${assignment}`),{view:'admin',assignmentId:undefined,contractId:undefined,journeyId:undefined,conquestId:assignment});
 console.log('Product utils: DOB, idade, aniversário, onboarding e navegação persistente validados.');
