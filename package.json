@@ -29,6 +29,8 @@
     "test:concierge": "node scripts/test-concierge-mvp.mjs",
     "test:concierge-db": "node scripts/test-concierge-db-rollback.mjs",
     "test:concierge-e2e": "node scripts/test-concierge-e2e.mjs",
+    "test:notifications": "node scripts/test-notification-layer.mjs",
+    "test:push-runtime": "node scripts/test-push-runtime.mjs",
     "admin:promote": "node scripts/promote-admin.mjs"
   },
   "dependencies": {
@@ -37,6 +39,7 @@
     "pg": "^8.23.0",
     "react": "19.2.6",
     "react-dom": "19.2.6",
+    "web-push": "^3.6.7",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -48,6 +51,7 @@
     "@types/pg": "^8.23.1",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "@types/web-push": "^3.6.4",
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
     "eslint": "9.39.4",
