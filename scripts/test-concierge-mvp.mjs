@@ -13,7 +13,9 @@ const checks={
  'publicação em lote notifica uma vez por público':migration.includes('admin_publish_curated_missions')&&migration.includes('CURATED_MISSIONS_READY'),
  'evidência obrigatória é validada no banco':migration.includes("raise exception 'evidence_required'")&&migration.includes("'evidence_required',d.evidence_required"),
  'cancelamento preserva aprovado e remove ativos':migration.includes("status not in ('APPROVED','CANCELLED')")&&migration.includes("sum(x.amount)"),
- 'formulário Admin preserva referência antes do await':ui.includes('const form=e.currentTarget,f=new FormData(form)')&&ui.includes("setMessage('Rascunho salvo.');\nform.reset()")&&!ui.includes("setMessage('Rascunho salvo.');(e.currentTarget"),
+ 'formulários Admin preservam referência antes do await':ui.includes('const form=e.currentTarget')&&ui.includes('form.reset()')&&!ui.includes('currentTarget as HTMLFormElement')&&!ui.includes('currentTarget.reset()'),
+ 'draft conduz à revisão e evita duplo envio':ui.includes('button.disabled=true')&&ui.includes('saved.draft.id')&&ui.includes("document.querySelector('.draft-row')")&&ui.includes('Revise abaixo e publique'),
+ 'draft não dispara Push':!ui.slice(ui.indexOf('const submit='),ui.indexOf('const publish=')).includes('/api/push/dispatch'),
  'service role continua apenas server-side':!read('app/concierge-admin.tsx').includes('SUPABASE_SERVICE_ROLE_KEY')&&!read('app/concierge-conquest.tsx').includes('SUPABASE_SERVICE_ROLE_KEY')
 };
 for(const[label,pass]of Object.entries(checks))assert.equal(pass,true,label);console.log(JSON.stringify({suite:'concierge-mvp-static-contract',status:'PASS',checks:Object.keys(checks).length}));
